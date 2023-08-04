@@ -4,7 +4,10 @@
 module.exports = {
   siteMetadata: {
     title: `Personal Gatsby Website`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://davidpardobernal.netlify.app/`,
   },
-  plugins: [],
+  plugins: [
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+  ],
 }
