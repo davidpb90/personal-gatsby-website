@@ -61,6 +61,16 @@ const Layout = ({ pageTitle, children }) => {
                                     Blog
                                 </Link>
                             </li>
+                            <li className={navLinkItem}>
+                                <Link to="/cv" className={navLinkText}>
+                                    CV
+                                </Link>
+                            </li>
+                            <li className={navLinkItem}>
+                                <Link to="/contact" className={navLinkText}>
+                                    Contact
+                                </Link>
+                            </li>
 	    		    		{/* <li><a className={navLink} href="data.html">Data</a></li>
 	    		    		<li><a className={navLink} href="stories.html">Stories</a></li>
 	    		    		<li><a className={navLink} href="photography.html">Photography</a></li>
@@ -73,7 +83,9 @@ const Layout = ({ pageTitle, children }) => {
 	    		</div>
 	  		</div>	
 			<footer className={footer}>
-				<a href="contact.html">Contact Me</a>
+                <Link to="/contact" className={navLinkText}>
+                    Contact Me
+                </Link>
 				<p>Designed and built by David Pardo Bernal based on Bootstrap's Cover template</p>
 	  	    </footer>
 	  	</div>
