@@ -1,0 +1,19 @@
+---
+title: "Debugging Tracking in Browser"
+date: "2023-08-03"
+slug: "debugging-tracking"
+hero_image: "./image-4.jpeg"
+hero_image_alt: "Dark Mountain"
+hero_image_credit_text: "Thushan Arandara"
+hero_image_credit_link: "https://unsplash.com/photos/bocy9OjVjn4"
+---
+
+At work we're using GTM and GA4 to track anonymised user behaviour in our website. 
+I noticed that page views were double firing in the GA4 debugger. I found most upvoted 
+answer in [this StackOverflow question](https://stackoverflow.com/questions/75745048/all-events-duplicated-in-google-analytics-4-debugger) to be extremely helpful.
+Using the Network section of Chrome's DevTools I managed to find out that
+the relevant tags where double firing in a way: firing once for the whole website 
+and another time for an embedded iframe.
+
+
+  
