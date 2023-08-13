@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
+import NavBar from '../components/navbar'
 import {
     container,
     heading,
@@ -39,63 +40,9 @@ const Layout = ({ pageTitle, children }) => {
 	    			{/* </p> */}
 	    		    {/* <script src="js/p5-sketches.js"></script> */}
 	    		</main>
-	    		<div className={rightNavbar}>
-	    		  	<h3 className={brand}>DPB</h3>
-	    		  	{/* <div className={navbarToggle}>
-	    		  		<i className={fas}></i>
-	    		  	</div> */}
-	    		  	<nav className={navbar}>
-                        <ul className={navLinks}>
-	    		    		<li className={navLinkItem}> 
-                                <Link to="/" className={navLinkText}>
-                                    Home
-                                </Link>
-                            </li>
-                            <li className={navLinkItem}>
-                                <Link to="/about" className={navLinkText}>
-                                    About
-                                </Link>
-                            </li>
-                            <li className={navLinkItem}>
-                                <Link to="/blog" className={navLinkText}>
-                                    Blog
-                                </Link>
-                            </li>
-                            <li className={navLinkItem}>
-                                <Link to="/travels" className={navLinkText}>
-                                    Travels
-                                </Link>
-                            </li>
-                            <li className={navLinkItem}>
-                                <Link to="/photography" className={navLinkText}>
-                                    Photography
-                                </Link>
-                            </li>
-                            <li className={navLinkItem}>
-                                <Link to="/stories" className={navLinkText}>
-                                    Stories
-                                </Link>
-                            </li>
-                            <li className={navLinkItem}>
-                                <Link to="/cv" className={navLinkText}>
-                                    CV
-                                </Link>
-                            </li>
-                            <li className={navLinkItem}>
-                                <Link to="/contact" className={navLinkText}>
-                                    Contact
-                                </Link>
-                            </li>
-	    		    		{/* <li><a className={navLink} href="data.html">Data</a></li>
-	    		    		<li><a className={navLink} href="stories.html">Stories</a></li>
-	    		    		<li><a className={navLink} href="photography.html">Photography</a></li>
-	    		    		<li><a className={navLink} href="travels.html">Travels</a></li>
-	    		    		<li><a className={navLink} href="experiments.html">Experiments</a></li>
-	    		    		<li><a className={navLink} href="cv.html">CV</a></li>
-	    		    		<li><a className={navLink} href="contact.html">Contact</a></li> */}
-	    		    	</ul>
-	    		  	</nav>
-	    		</div>
+	    		<NavBar> 
+                    
+                </NavBar>
 	  		</div>	
 			<footer className={footer}>
                 <Link to="/contact" className={navLinkText}>
