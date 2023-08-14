@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
 import NavBar from '../components/navbar'
+import Footer from '../components/footer'
 import {
     container,
     heading,
@@ -41,43 +42,14 @@ const Layout = ({ pageTitle, children }) => {
 	    		    {/* <script src="js/p5-sketches.js"></script> */}
 	    		</main>
 	    		<NavBar> 
-                    
+
                 </NavBar>
 	  		</div>	
-			<footer className={footer}>
-                <Link to="/contact" className={navLinkText}>
-                    Contact Me
-                </Link>
-				<p>Designed and built by David Pardo Bernal based on Bootstrap's Cover template</p>
-	  	    </footer>
-	  	</div>
-
-        // <div className={container}>
-        //     <header className={siteTitle}>{data.site.siteMetadata.title}</header>
-        //     <nav>
-        //         <ul className={navLinks}>
-        //             <li className={navLinkItem}>
-        //                 <Link to="/">
-        //                     Home
-        //                 </Link>
-        //             </li>
-        //             <li className={navLinkItem}>
-        //                 <Link to="/about">
-        //                     About
-        //                 </Link>
-        //             </li>
-        //             <li className={navLinkItem}>
-        //                 <Link to="/blog" className={navLinkText}>
-        //                     Blog
-        //                 </Link>
-        //             </li>
-        //         </ul>
-        //     </nav>
-        //     <main>
-        //         <h1 className={heading}>{pageTitle}</h1>
-        //         {children}
-        //     </main>
-        // </div>
+            <Footer>
+            </Footer>
+		</div>
+        
+       
     )
 }
 
