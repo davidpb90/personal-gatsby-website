@@ -33,7 +33,7 @@ const Footer = ({ pageTitle, children }) => {
                     <Link to="/contact" className={navLinkText}>
                     Contact Me
                     </Link>
-                    <p>Designed and built by David Pardo Bernal based on Bootstrap's Cover template</p>
+                    <p>Designed and built by David Pardo Bernal</p>
                 </footer>
     )
 }
