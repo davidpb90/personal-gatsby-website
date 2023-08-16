@@ -1,0 +1,102 @@
+$primary-color: 249 190 193;
+$text-color: 0 0 0;
+$paper-color: 255 255 255;
+$editor-color: 195 181 186;
+
+$planck-length: 9px;
+$outer-padding: $planck-length * 6;
+$amount-columns: 12;
+$column-gutter: $planck-length * 2;
+
+$break-desk-xxl: 105rem;
+$break-desk-small: 85rem;
+$break-tab: 64rem;
+$break-mob: 30rem;
+
+$font-stack-sans: "Freedom Font", helvetica neue, helvetica, arial, sans-serif;
+$font-stack-mono: "Space mono", monospace;
+
+@function growth-grid($scale) {
+    @return $planck-length * $scale;
+}
+
+@function column-width($num-cols, $extra-padding) {
+    $margin: $outer-padding * 2;
+    $total-gutter: $column-gutter * ($amount-columns - 1);
+    $total-empty-space: $margin +$total-gutter;
+    $gutters: $column-gutter * ($num-cols - 1);
+    $added-space: $gutters +$extra-padding;
+
+    @return calc(#{$num-cols} * ((100vw - #{$total-empty-space}) / #{$amount-columns}) + #{$added-space});
+}
+
+@mixin from-desk-xxl {
+    @media only screen and (min-width: $break-desk-xxl) {
+        @content;
+    }
+}
+
+@mixin on-desk-small {
+    @media only screen and (max-width: $break-desk-small) {
+        @content;
+    }
+}
+
+@mixin on-tablet {
+    @media only screen and (max-width: $break-tab) {
+        @content;
+    }
+}
+
+@mixin on-mobile {
+    @media only screen and (max-width: $break-mob) {
+        @content;
+    }
+}
+
+@mixin on-hover {
+    @media (hover: hover) and (pointer: fine) {
+        &:hover {
+            @content;
+        }
+    }
+}
+
+@mixin type-weight-bold {
+    font-weight: 700;
+}
+
+@mixin type-weight-normal {
+    font-weight: 400;
+}
+
+@mixin type-heading-1 {
+    font-size: 4rem;
+    line-height: 1.2em;
+}
+
+@mixin type-heading-2 {
+    font-size: 2rem;
+    line-height: 1.2em;
+}
+
+@mixin type-heading-3 {
+    font-size: 1.5rem;
+    line-height: 1.2em;
+}
+
+@mixin type-default {
+    font-size: $planck-length * 2;
+    line-height: 1.25em;
+}
+
+@mixin type-small {
+    font-size: 0.889rem;
+    line-height: 1em;
+}
+
+@mixin reset-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
