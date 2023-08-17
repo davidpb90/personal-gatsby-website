@@ -6,7 +6,21 @@ import Seo from '../components/seo'
 const ContactPage = () => {
   return (
       <Layout pageTitle="Contact">
-          <p>Hi there! I'm the proud creator of this site, which I built with Gatsby.</p>
+          <h1>Contact Details</h1>
+
+          <p>Email: davidpb90@gmail.com</p>
+
+          <hr/>
+
+          <form action="mailto:davidpb90@gmail.com" method="post" enctype="text/plain">
+            <label>Your Name:</label>
+            <input type="text" name="yourName" value=""></input><br/>
+            <label for="">Your Email:</label>
+            <input type="email" name="yourEmail" value=""></input><br/>
+            <label for="">Your Message:</label><br/>
+            <textarea name="yourMessage" id="" cols="30" rows="10"></textarea><br/>
+            <input type="submit" name=""></input>
+           </form>
       </Layout>
   )
 }
