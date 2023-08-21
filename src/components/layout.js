@@ -17,7 +17,7 @@ import {
     navbar,
     footer
 } from './layout.module.scss'
-import '../scss/main.scss'
+
 
 const Layout = ({ pageTitle, children }) => {
     const data = useStaticQuery(graphql`
