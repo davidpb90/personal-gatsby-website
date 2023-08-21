@@ -16,7 +16,7 @@ import {
     brand,
     navbar,
     footer
-} from './layout.module.scss'
+} from '../scss/components/layout.module.scss'
 
 
 const Layout = ({ pageTitle, children }) => {
