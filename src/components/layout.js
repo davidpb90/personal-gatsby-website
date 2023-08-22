@@ -17,6 +17,7 @@ import {
     navbar,
     footer
 } from '../scss/components/layout.module.scss'
+//from './layout.module.scss'
 
 
 const Layout = ({ pageTitle, children }) => {
@@ -31,7 +32,11 @@ const Layout = ({ pageTitle, children }) => {
     `)
     
     return (
-        <div className={wrapper}>
+        <div style={{
+            backgroundColor: 'var(--bg)',
+            color: 'var(--textNormal)',
+            transition: 'color 0.2s ease-out, background 0.2s ease-out',
+        }} className={wrapper}>
 	  		<div className={mainContainer}>
 	    		<main className={main}>
                     <h1 className={heading}>{pageTitle}</h1>

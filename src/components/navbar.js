@@ -15,6 +15,7 @@ import {
     navbar,
     footer
 } from './layout.module.scss'
+import DarkModeToggler from '../components/dark-mode-toggler'
 
 const NavBar = ({ pageTitle, children }) => {
     const data = useStaticQuery(graphql`
@@ -30,6 +31,10 @@ const NavBar = ({ pageTitle, children }) => {
     return (
         
 	    		<div className={rightNavbar}>
+                    <DarkModeToggler>
+
+                    </DarkModeToggler>
+            
 	    		  	<h3 className={brand}>DPB</h3>
 	    		  	{/* <div className={navbarToggle}>
 	    		  		<i className={fas}></i>
