@@ -39,9 +39,9 @@ const Layout = ({ pageTitle, children }) => {
             transition: 'color 0.2s ease-out, background 0.2s ease-out',
         }} className={wrapper}>
 	  		<div className={mainContainer}>
-                <Header>
+                {/* <Header>
 
-                </Header>
+                </Header> */}
                 <main className={main}>
                     <h1 className={heading}>{pageTitle}</h1>
                     {children}
