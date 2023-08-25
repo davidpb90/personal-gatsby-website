@@ -7,24 +7,35 @@ import Moon from "../images/moon.svg";
 
 import "../scss/main.scss";
 
+function getDefaultTheme() {
+    const savedTheme = window.localStorage.getItem("theme");
+    return savedTheme ? savedTheme : "light";
+} 
+
 const Header = props => {
-    const [isDark, setIsDark] = useState(false);
+    const [isDark, setIsDark] = useState(getDefaultTheme());
 
     useEffect(() => {
-        if (isDark) {
+        if (isDark === "dark") {
             document.body.classList.add("dark");
         } else {
             document.body.classList.remove("dark");
         }
+        window.localStorage.setItem("theme", isDark);
     }, [, isDark]);
 
     return (
-        <div>
-            {isDark ? (
+        <div onClick={() => setIsDark(isDark === "dark" ? "light" : "dark")}>
+            {isDark === "dark" ? (
+                <img src={Sun} alt="sun img" />
+            ) : (
+                <img src={Moon} alt="moon img" />
+            )}
+            {/* {isDark ? (
                 <img onClick={() => setIsDark(!isDark)} src={Sun} />
             ) : (
                 <img onClick={() => setIsDark(!isDark)} src={Moon} />
-            )}
+            )} */}
         </div>
     );
 };
