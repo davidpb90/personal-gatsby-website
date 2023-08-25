@@ -8,7 +8,12 @@ import Moon from "../images/moon.svg";
 import "../scss/main.scss";
 
 function getDefaultTheme() {
-    const savedTheme = window.localStorage.getItem("theme");
+    const savedTheme = 
+        (typeof window !== 'undefined') ? (
+            window.localStorage.getItem("theme")
+        ) : (
+            null
+        );
     return savedTheme ? savedTheme : "light";
 } 
 
