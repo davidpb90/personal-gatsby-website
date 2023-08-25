@@ -7,15 +7,19 @@ import Moon from "../images/moon.svg";
 
 import "../scss/main.scss";
 
+const isBrowser = typeof window !== "undefined";
+
 function getDefaultTheme() {
     const savedTheme = 
-        (typeof window !== 'undefined') ? (
+        isBrowser ? (
             window.localStorage.getItem("theme")
         ) : (
             null
         );
     return savedTheme ? savedTheme : "light";
 } 
+
+
 
 const Header = props => {
     const [isDark, setIsDark] = useState(getDefaultTheme());
@@ -26,7 +30,9 @@ const Header = props => {
         } else {
             document.body.classList.remove("dark");
         }
-        window.localStorage.setItem("theme", isDark);
+        if (isBrowser) {
+            window.localStorage.setItem("theme", isDark);
+        }
     }, [, isDark]);
 
     return (
