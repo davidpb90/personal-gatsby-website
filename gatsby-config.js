@@ -6,6 +6,9 @@ module.exports = {
     title: `Personal Gatsby Website`,
     siteUrl: `https://davidpardobernal.netlify.app/`,
   },
+  flags: {
+    DEV_SSR: true
+  },
   plugins: [
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",

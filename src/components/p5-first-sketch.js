@@ -95,50 +95,57 @@
 
 // export default P5Sketch;
 
-
 import React from 'react';
-import Sketch from 'react-p5';
+import loadable from '@loadable/component';
+//import Sketch from 'react-p5';
 
 let circleRadius = 50;
 let maxRadius = 300;
 let isDiffusing = false;
 function P5Sketch() {
-    const setup = (p5, canvasParentRef) => {
-        p5.createCanvas(500, 400).parent(canvasParentRef);
-    }
+    if (typeof window !== 'undefined') {
 
-    const draw = (p5) => {
-        //p5.frameRate(30);
-        p5.clear();
-        // background(255);
-        let c = p5.color(255, 204, 0);
-        p5.fill(c);
-        if (isDiffusing) {
-            circleRadius += 2; // Increase the radius to simulate diffusion
-            if (circleRadius > maxRadius) {
-                circleRadius = maxRadius;
-            }
-        } else {
-            circleRadius -= 2; // Decrease the radius to revert diffusion
-            if (circleRadius < 0) {
-                circleRadius = 0;
-            }
+        const Sketch = loadable(() => import('react-p5'));
+        const setup = (p5, canvasParentRef) => {
+            p5.createCanvas(500, 400).parent(canvasParentRef);
         }
-        let x = p5.width / 2;
-        let y = p5.height / 2;
-        p5.ellipse(p5.mouseX, p5.mouseY, circleRadius * 2);
-    }
 
-    const mousePressed = (p5) => {
-        isDiffusing = true;
-    }
-    const mouseReleased = (p5) => {
-        isDiffusing = false;
-    }
+        const draw = (p5) => {
+            //p5.frameRate(30);
+            p5.clear();
+            // background(255);
+            let c = p5.color(255, 204, 0);
+            p5.fill(c);
+            if (isDiffusing) {
+                circleRadius += 2; // Increase the radius to simulate diffusion
+                if (circleRadius > maxRadius) {
+                    circleRadius = maxRadius;
+                }
+            } else {
+                circleRadius -= 2; // Decrease the radius to revert diffusion
+                if (circleRadius < 0) {
+                    circleRadius = 0;
+                }
+            }
+            let x = p5.width / 2;
+            let y = p5.height / 2;
+            p5.ellipse(p5.mouseX, p5.mouseY, circleRadius * 2);
+        }
 
-    return (
-        <Sketch setup={setup} draw={draw} mousePressed={mousePressed} mouseReleased={mouseReleased}/>
-    )
+        const mousePressed = (p5) => {
+            isDiffusing = true;
+        }
+        const mouseReleased = (p5) => {
+            isDiffusing = false;
+        }
+
+        return (
+            <Sketch setup={setup} draw={draw} mousePressed={mousePressed} mouseReleased={mouseReleased}/>
+        )
+    } else { // if window does not exist
+
+        return null;
+    }
 }
 
 export default P5Sketch;
