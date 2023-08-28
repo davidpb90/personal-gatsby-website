@@ -1,8 +1,9 @@
-@import './abstracts/variables';
+// abstracts
+@import './1-abstracts/abstracts-dir';
+// themes
+@import './2-themes/themes-dir';
 // base
-@import './base/base';
-@import './base/fonts';
-@import './base/reset';
+@import './3-base/base-dir';
 //layout
 //@import './layout/header';
 //@import './layout/grids';
