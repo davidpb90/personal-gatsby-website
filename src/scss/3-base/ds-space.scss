@@ -1,0 +1,77 @@
+$ds-point-unit: 8px !default;
+// Point-Grid System
+// Use multiples of this value to define dimensions, padding, and margin of both block and inline elements.
+// Learn more here: https://builttoadapt.io/intro-to-the-8-point-grid-system-d2573cde8632
+
+$ds-spacing-data: (
+  none: 0,                           
+  extra-tight:  ds-rem($ds-point-unit / 2), // 4px
+  tight:        ds-rem($ds-point-unit),     // 8px
+  base:         ds-rem($ds-point-unit * 2), // 16px
+  bit-loose:    ds-rem($ds-point-unit * 3), // 24px
+  loose:        ds-rem($ds-point-unit * 4), // 32px
+  extra-loose:  ds-rem($ds-point-unit * 6), // 48px
+  super-loose:  ds-rem($ds-point-unit * 8)  // 64px
+) !default;
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+// Grid System using Neat https://neat.bourbon.io/docs/latest/
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+$ds-custom-grid: (
+  columns: 12,
+  gutter: 40px,
+);
+
+.ds-col-container {
+  @include grid-container;
+  @include grid-collapse;
+}
+
+.ds-col-12 {
+   @include grid-column(12, $ds-custom-grid)
+}
+
+.ds-col-11 {
+   @include grid-column(11, $ds-custom-grid)
+}
+
+.ds-col-10 {
+   @include grid-column(10, $ds-custom-grid)
+}
+
+.ds-col-9 {
+   @include grid-column(9, $ds-custom-grid)
+}
+
+.ds-col-8 {
+   @include grid-column(8, $ds-custom-grid)
+}
+
+.ds-col-7 {
+   @include grid-column(7, $ds-custom-grid)
+}
+
+.ds-col-6 {
+   @include grid-column(6, $ds-custom-grid)
+}
+
+.ds-col-5 {
+   @include grid-column(5, $ds-custom-grid)
+}
+
+.ds-col-4 {
+   @include grid-column(4, $ds-custom-grid)
+}
+
+.ds-col-3 {
+   @include grid-column(3, $ds-custom-grid)
+}
+
+.ds-col-2 {
+   @include grid-column(2, $ds-custom-grid)
+}
+
+.ds-col-1 {
+   @include grid-column(1, $ds-custom-grid)
+}
