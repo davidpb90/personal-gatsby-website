@@ -1,9 +1,11 @@
 // abstracts
-@forward './1-abstracts/abstracts-dir';
+@forward '1-abstracts/abstracts-dir';
 // themes
-@forward './2-themes/themes-dir';
+@forward '2-themes/themes-dir';
 // base
-@forward './3-base/base-dir';
+@forward '3-base/base-dir';
+@forward '4-components/components-dir';
 //layout
 //@import './layout/header';
 //@import './layout/grids';
+
