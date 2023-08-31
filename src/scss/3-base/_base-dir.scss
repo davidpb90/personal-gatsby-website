@@ -1,21 +1,22 @@
-@forward './base';
-@forward './fonts';
-@forward './reset';
 
-// @forward './_generic/_normalize.scss';
-// @forward './_generic/_general-functions.scss';
+// @forward './fonts';
+// @forward './reset';
 
-// @forward './ds-color.scss';
-// @forward './ds-depth.scss';
-// @forward './ds-motion.scss';
-// @forward './ds-typography.scss';
-// @forward './ds-space.scss';
+@forward './_generic/_normalize.scss';
+@forward './_generic/_general-functions.scss';
 
-// // include scss functions
-// @forward './utility-functions/_functions-base.scss';
-// // base mixins
-// @forward './utility-mixins/_mixins-base.scss';
+//@forward './ds-color.scss';
+@forward './ds-depth.scss';
+@forward './ds-motion.scss';
+//@forward './ds-typography.scss';
+@forward './ds-space.scss';
 
-// @forward './ds-iconography.scss';
+// include scss functions
+@forward './utility-functions/_functions-base.scss';
+// base mixins
+@forward './utility-mixins/_mixins-base.scss';
 
-// @forward './_elements/_elements.scss';
+@forward './ds-iconography.scss';
+
+@forward './_elements/_elements.scss';
+//@forward './base';
