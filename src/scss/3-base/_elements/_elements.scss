@@ -1,7 +1,6 @@
 :root {
-  font-family: 'Poppins',
-    sans-serif; //$ds-theme-font-family;
-  font-size: 16px; //$ds-theme-base-font-size;
+  font-family: $ds-theme-font-family;
+  font-size: $ds-theme-base-font-size;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
@@ -21,10 +20,10 @@ $ds-brand-text-color:     ds-color(primary, 400);
 $ds-secondary-text-color: ds-color(neutral, 400);
 $ds-base-link-text-color: $ds-brand-text-color;
 
-// html {
-//   background-color: $app-background-color;
-//   color: $ds-base-text-color;
-// }
+html {
+  background-color: $app-background-color;
+  color: $ds-base-text-color;
+}
 
 // Typography
 .ds-H1-text-style {
@@ -155,7 +154,7 @@ button {
 }
 
 code {
-  font-size: 16px; //$ds-theme-base-font-size;
+  font-size: $ds-theme-base-font-size;
 }
 
 pre {
