@@ -1,3 +1,5 @@
+@use '../../2-themes/themes-dir' as themes;
+
 $ds-default-browser-font-size: 16px;
 
 /// Returns the value in rem for a given pixel value.
@@ -12,9 +14,9 @@ $ds-default-browser-font-size: 16px;
   } @else if $unit == 'rem' {
     @return $value;
   } @else if $unit == 'px' {
-    @return $value / $ds-theme-base-font-size * 1rem;
+    @return calc($value / themes.$ds-theme-base-font-size) * 1rem;
   } @else if $unit == 'em' {
-    @return $unit / 1em * 1rem;
+    @return calc($unit / 1em) * 1rem;
   } @else {
     @error 'Value must be in px, em, or rem.';
   }
@@ -34,9 +36,9 @@ $ds-default-browser-font-size: 16px;
   } @else if $unit == 'em' {
     @return $value;
   } @else if $unit == 'rem' {
-    @return $value / 1rem * 1em * ($ds-theme-base-font-size / $ds-default-browser-font-size);
+    @return calc($value / 1rem) * 1em * calc(themes.$ds-theme-base-font-size / $ds-default-browser-font-size);
   } @else if $unit == 'px' {
-    @return $value / $ds-default-browser-font-size * 1em;
+    @return calc($value / $ds-default-browser-font-size) * 1em;
   } @else {
     @error 'Value must be in px, rem, or em.';
   }

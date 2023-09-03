@@ -1,14 +1,16 @@
+@use '../ds-space' as space;
+
 /// Returns the spacing value for a given variant.
 ///
 /// @param {String} $space - how much space do you need.
 /// @return {Number} The spacing for the variant in px.
 
 @function ds-space($space: base) {
-  $fetched-value: map-get($ds-spacing-data, $space);
+  $fetched-value: map-get(space.$ds-spacing-data, $space);
 
   @if type-of($fetched-value) == number {
     @return $fetched-value;
   } @else {
-    @error 'Spacing variant `#{$space}` not found. Available variants: #{$ds-spacing-data}';
+    @error 'Spacing variant `#{$space}` not found. Available variants: #{space.$ds-spacing-data}';
   }
 }

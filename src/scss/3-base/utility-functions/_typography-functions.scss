@@ -1,13 +1,15 @@
+@use '../ds-typography' as typography;
+
 /// Returns the font size for a given range.
 ///
 /// @param {Number} $range - The font style.
 /// @return {Number} The font-size for the text-style.
 @function ds-font-size($range) {
-  $fetched-font-size: map-get($ds-font-size-data, $range);
+  $fetched-font-size: map-get(typography.$ds-font-size-data, $range);
   @if type-of($fetched-font-size) != null {
     @return $fetched-font-size;
   } @else {
-    @error 'Font size range `#{$range}` not found. Available font sizes: #{$ds-font-size-data}';
+    @error 'Font size range `#{$range}` not found. Available font sizes: #{typography.$ds-font-size-data}';
   }
 }
 
@@ -16,11 +18,11 @@
 /// @param {Number} $range - The font style.
 /// @return {Number} The line-height for the text-style.
 @function ds-line-height($range: normal) {
-  $fetched-line-height: map-get($ds-line-height-data, $range);
+  $fetched-line-height: map-get(typography.$ds-line-height-data, $range);
   @if type-of($fetched-line-height) != null {
     @return $fetched-line-height;
   } @else {
-    @error 'Line height `#{$range}` not found. Available line heights: #{$ds-line-height-data}';
+    @error 'Line height `#{$range}` not found. Available line heights: #{typography.$ds-line-height-data}';
   }
 }
 
@@ -29,10 +31,10 @@
 /// @param {String} $weight - The font weight.
 /// @return {Number} The font-weight for the text-weight.
 @function ds-font-weight($weight: normal) {
-  $fetched-font-weight: map-get($ds-font-weight-data, $weight);
+  $fetched-font-weight: map-get(typography.$ds-font-weight-data, $weight);
   @if type-of($fetched-font-weight) != null {
     @return $fetched-font-weight;
   } @else {
-    @error 'Font weight `#{$weight}` not found. Available font weights: #{$ds-font-weight-data}';
+    @error 'Font weight `#{$weight}` not found. Available font weights: #{typography.$ds-font-weight-data}';
   }
 }

@@ -1,5 +1,5 @@
-@import './color-functions.scss';
-@import './typography-functions.scss';
-@import './space-functions.scss';
-@import './motion-functions.scss';
-@import './depth-functions.scss';
+@forward './color-functions';
+@forward './typography-functions';
+@forward './space-functions';
+@forward './motion-functions';
+@forward './depth-functions';

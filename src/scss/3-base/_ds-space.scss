@@ -1,3 +1,4 @@
+@use './_generic/general-functions' as general;
 $ds-point-unit: 8px !default;
 // Point-Grid System
 // Use multiples of this value to define dimensions, padding, and margin of both block and inline elements.
@@ -5,13 +6,13 @@ $ds-point-unit: 8px !default;
 
 $ds-spacing-data: (
   none: 0,                           
-  extra-tight:  ds-rem($ds-point-unit / 2), // 4px
-  tight:        ds-rem($ds-point-unit),     // 8px
-  base:         ds-rem($ds-point-unit * 2), // 16px
-  bit-loose:    ds-rem($ds-point-unit * 3), // 24px
-  loose:        ds-rem($ds-point-unit * 4), // 32px
-  extra-loose:  ds-rem($ds-point-unit * 6), // 48px
-  super-loose:  ds-rem($ds-point-unit * 8)  // 64px
+  extra-tight:  general.ds-rem(calc($ds-point-unit / 2)), // 4px
+  tight:        general.ds-rem($ds-point-unit),     // 8px
+  base:         general.ds-rem($ds-point-unit * 2), // 16px
+  bit-loose:    general.ds-rem($ds-point-unit * 3), // 24px
+  loose:        general.ds-rem($ds-point-unit * 4), // 32px
+  extra-loose:  general.ds-rem($ds-point-unit * 6), // 48px
+  super-loose:  general.ds-rem($ds-point-unit * 8)  // 64px
 ) !default;
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////

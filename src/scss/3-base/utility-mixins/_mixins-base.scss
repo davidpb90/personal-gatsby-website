@@ -1,5 +1,5 @@
-@import './color-mixins.scss';
-@import './typography-mixins.scss';
-@import './space-mixins.scss';
-@import './motion-mixins.scss';
-@import './depth-mixins.scss';
+@forward './color-mixins';
+@forward './typography-mixins';
+@forward './space-mixins';
+@forward './motion-mixins';
+@forward './depth-mixins';

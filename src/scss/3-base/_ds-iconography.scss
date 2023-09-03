@@ -1,10 +1,11 @@
+@use './utility-functions/functions-base' as f;
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
-  font-size: ds-space(bit-loose);  /* Preferred icon size */
+  font-size: f.ds-space(bit-loose);  /* Preferred icon size */
   display: inline-block;
   line-height: 1;
   text-transform: none;
@@ -27,25 +28,25 @@
 
 
 .ds-icon-tiny {
-  font-size: ds-space(base);
+  font-size: f.ds-space(base);
 }
 
 .ds-icon-small {
-  font-size: ds-space(bit-loose);
+  font-size: f.ds-space(bit-loose);
 }
 
 .ds-icon-medium {
-  font-size: ds-space(loose);
+  font-size: f.ds-space(loose);
 }
 
 .ds-icon-large {
-  font-size: ds-space(extra-loose);
+  font-size: f.ds-space(extra-loose);
 }
 
 .ds-icon-xlarge {
-  font-size: ds-space(super-loose);
+  font-size: f.ds-space(super-loose);
 }
 
 .ds-icon-xxlarge {
-  font-size: ds-space(super-loose) * 1.5;
+  font-size: f.ds-space(super-loose) * 1.5;
 }

@@ -1,13 +1,14 @@
+@use '../ds-depth' as depth;
 /// Returns the shadow for the specified depth
 /// @param {String} $depth [base] - The shadow's depth.
 /// @return {List} The shadow value.
 
 @function ds-depth($depth: 100) {
-  $fetched-value: map-get($ds-shadows-data, $depth);
+  $fetched-value: map-get(depth.$ds-shadows-data, $depth);
 
   @if type-of($fetched-value) == list {
     @return $fetched-value;
   } @else {
-    @error 'Shadow variant `#{$depth}` not found. Available variants: #{$ds-shadows-data}';
+    @error 'Shadow variant `#{$depth}` not found. Available variants: #{depth.$ds-shadows-data}';
   }
 }

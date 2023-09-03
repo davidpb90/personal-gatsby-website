@@ -2,21 +2,21 @@
 // @forward './fonts';
 // @forward './reset';
 
-@import './_generic/_normalize.scss';
-@import './_generic/_general-functions.scss';
+@forward './_generic/normalize';
+@forward './_generic/general-functions';
 
-@import './ds-color.scss';
-@import './ds-depth.scss';
-@import './ds-motion.scss';
-@import './ds-typography.scss';
-@import './ds-space.scss';
+@forward './ds-color';
+@forward './ds-depth';
+@forward './ds-motion';
+@forward './ds-typography';
+@forward './ds-space';
 
-// include scss functions
-@import './utility-functions/_functions-base.scss';
+// include functions
+@forward './utility-functions/functions-base';
 // base mixins
-@import './utility-mixins/_mixins-base.scss';
+@forward './utility-mixins/mixins-base';
 
-@import './ds-iconography.scss';
+@forward './ds-iconography';
 
-@import './_elements/_elements.scss';
+@forward './_elements/elements';
 // @import './base';
