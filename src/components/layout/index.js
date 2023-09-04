@@ -1,8 +1,8 @@
 import * as React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
-import NavBar from '../components/navbar'
-import Footer from '../components/footer'
-import Header from '../components/header'
+import NavBar from '../navbar'
+import Footer from '../footer'
+import Header from '../header'
 import {
     container,
     heading,
@@ -17,8 +17,8 @@ import {
     brand,
     navbar,
     footer
-} from '../scss/4-components/layout.module.scss'
-//from './layout.module.scss'
+} //from '../../scss/main.scss'
+from './layout.module.scss'
 
 
 const Layout = ({ pageTitle, children }) => {

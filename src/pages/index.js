@@ -5,6 +5,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 import Seo from '../components/seo'
 import P5Sketch from '../components/p5-first-sketch'
 
+
 const pageStyles = {
   color: "#232129",
   padding: 96,

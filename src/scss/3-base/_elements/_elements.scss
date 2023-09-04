@@ -3,8 +3,8 @@
 @use '../utility-mixins/mixins-base' as mixins;
 
 :root {
-  font-family: $ds-theme-font-family;
-  font-size: $ds-theme-base-font-size;
+  font-family: themes.$ds-theme-font-family;
+  font-size: themes.$ds-theme-base-font-size;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   --color-primary: #CD104D;
@@ -34,16 +34,16 @@ $ds-secondary-text-color: functions.ds-color(neutral, 400);
 $ds-base-link-text-color: $ds-brand-text-color;
 
 body {
-  // color: $ds-base-text-color;
-  // background-color: $app-background-color;
+  color: var(--color-text);
+  background-color: var(--color-background);
   margin: 0;
   padding: 0;
 }
 
 /* 3 */
 body.dark {
-  --color-background: $ds-brand-text-color; //#171717;
-  --color-primary: $ds-secondary-text-color; //#CD104D;
+  --color-background: #{$ds-brand-text-color}; //#171717;
+  --color-primary: #{$ds-secondary-text-color}; //#CD104D;
   --color-text: #ffffff;
   --color-text-light: #4f5969;
   --color-heading: #DFDFDE;
@@ -54,8 +54,8 @@ body.dark {
 
 /* 4 */
 body.light {
-  --color-primary: $ds-brand-text-color; //#CD104D;
-  --color-text: $ds-secondary-text-color; //#2e353f;
+  --color-primary: #{$ds-brand-text-color}; //#CD104D;
+  --color-text: #{$ds-secondary-text-color}; //#2e353f;
   --color-text-light: #4f5969;
   --color-heading: #1a202c;
   --color-heading-black: black;
