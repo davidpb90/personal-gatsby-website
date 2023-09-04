@@ -317,8 +317,8 @@ $test-variable: #395717; //#333333;
 $other-test-variable: #333333;
 /* 3 */
 body.dark {
-    --color-background: #{$test-variable};//$ds-theme-color-primary-400; //ds-color(tertiary, 400); //#171717;
-    --color-primary: #{$other-test-variable};//var.$ds-theme-color-tertiary-400; //ds-color(primary, 400); //#CD104D;
+    --color-background: #{ds-color(tertiary, 400)};//$ds-theme-color-primary-400; //ds-color(tertiary, 400); //#171717;
+    --color-primary: #{ds-color(tertiary, 400)};//var.$ds-theme-color-tertiary-400; //ds-color(tertiary, 400); //#CD104D;
     --color-text: #ffffff;
     --color-text-light: #4f5969;
     --color-heading: #DFDFDE;
