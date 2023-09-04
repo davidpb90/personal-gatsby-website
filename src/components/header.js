@@ -5,7 +5,7 @@ import Moon from "../images/moon.svg";
 
 // You'll need to import index.css just in one of the components in your app.
 
-import "../scss/main.scss";
+import '../scss/main.scss';
 
 const isBrowser = typeof window !== "undefined";
 

@@ -17,7 +17,7 @@ import {
     brand,
     navbar,
     footer
-} from '../scss/main.scss'
+} from '../scss/4-components/layout.module.scss'
 //from './layout.module.scss'
 
 

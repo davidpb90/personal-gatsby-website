@@ -3,10 +3,10 @@
 @use '../utility-mixins/mixins-base' as mixins;
 
 :root {
-  // font-family: $ds-theme-font-family;
-  // font-size: $ds-theme-base-font-size;
-  // -moz-osx-font-smoothing: grayscale;
-  // -webkit-font-smoothing: antialiased;
+  font-family: $ds-theme-font-family;
+  font-size: $ds-theme-base-font-size;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
   --color-primary: #CD104D;
   --color-text: #2e353f;
   --color-text-light: #4f5969;
