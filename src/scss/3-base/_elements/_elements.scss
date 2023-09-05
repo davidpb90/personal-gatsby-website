@@ -27,7 +27,7 @@
 /// Utility Classes
 ///////////////////////////////////////////////////////////////////////////// 
 
-$app-background-color:    functions.ds-color(neutral, 400);
+$app-background-color:    black;
 $ds-base-text-color:      functions.ds-color(neutral, 400);
 $ds-brand-text-color:     functions.ds-color(primary, 400);
 $ds-secondary-text-color: functions.ds-color(neutral, 400);
@@ -42,9 +42,9 @@ body {
 
 /* 3 */
 body.dark {
-  --color-background: #{$ds-brand-text-color}; //#171717;
+  --color-background: #{$app-background-color}; //#171717;
   --color-primary: #{$ds-secondary-text-color}; //#CD104D;
-  --color-text: #ffffff;
+  --color-text: #{$ds-base-text-color};
   --color-text-light: #4f5969;
   --color-heading: #DFDFDE;
   --color-heading-black: #EDEDED;
