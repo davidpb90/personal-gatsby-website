@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
+import HeaderWrapper from './header-wrapper'
 import {
     container,
     heading,
@@ -26,6 +27,7 @@ const NavBar = ({ pageTitle, children }) => {
             }
         }
     `)
+    
     
     return (
         
