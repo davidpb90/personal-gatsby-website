@@ -2,7 +2,7 @@ import * as React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
 import NavBar from '../navbar'
 import Footer from '../footer'
-import HeaderWrapper from '../header'
+import Header from '../header'
 import {
     container,
     heading,
@@ -38,9 +38,13 @@ const Layout = ({ pageTitle, children }) => {
             color: 'var(--textNormal)',
             transition: 'color 0.2s ease-out, background 0.2s ease-out',
         }} className={wrapper}>
+            
 	  		<div className={mainContainer}>
                 <main className={main}>
                     <h1 className={heading}>{pageTitle}</h1>
+                    <Header>
+
+                    </Header>
                     {children}
 	    			{/* <h1 className={text}-left py-1 px-2 mx-2">David Pardo Bernal</h1> */}
 	    			{/* <p className={lead} py-1 px-2 mx-2">A personal and professional repository.</p> */}
