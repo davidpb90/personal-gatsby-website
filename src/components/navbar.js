@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
 import HeaderWrapper from './header-wrapper'
+import Header from './header'
 import {
     container,
     heading,
@@ -32,11 +33,15 @@ const NavBar = ({ pageTitle, children }) => {
     return (
         
 	    		<div className={rightNavbar}>
+                   
 	    		  	<h3 className={brand}>DPB</h3>
 	    		  	{/* <div className={navbarToggle}>
 	    		  		<i className={fas}></i>
 	    		  	</div> */}
 	    		  	<nav className={navbar}>
+                        <Header>
+                        
+                        </Header>
                         <ul className={navLinks}>
 	    		    		<li className={navLinkItem}> 
                                 <Link to="/" className={navLinkText}>

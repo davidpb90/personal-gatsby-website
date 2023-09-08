@@ -42,9 +42,6 @@ const Layout = ({ pageTitle, children }) => {
 	  		<div className={mainContainer}>
                 <main className={main}>
                     <h1 className={heading}>{pageTitle}</h1>
-                    <Header>
-
-                    </Header>
                     {children}
 	    			{/* <h1 className={text}-left py-1 px-2 mx-2">David Pardo Bernal</h1> */}
 	    			{/* <p className={lead} py-1 px-2 mx-2">A personal and professional repository.</p> */}
