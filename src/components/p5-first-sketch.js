@@ -107,7 +107,7 @@ function P5Sketch() {
 
         const Sketch = loadable(() => import('react-p5'));
         const setup = (p5, canvasParentRef) => {
-            p5.createCanvas(500, 400).parent(canvasParentRef);
+            p5.createCanvas(1500, 700).parent(canvasParentRef);
         }
 
         const draw = (p5) => {

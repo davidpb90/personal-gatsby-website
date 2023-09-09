@@ -1,7 +1,7 @@
 import * as React from "react"
 import { Link } from 'gatsby'
 import Layout from '../components/layout'
-import { StaticImage } from 'gatsby-plugin-image'
+
 import Seo from '../components/seo'
 import P5Sketch from '../components/p5-first-sketch'
 
@@ -133,10 +133,7 @@ const IndexPage = () => {
   return (
     <Layout pageTitle="Home Page">
       <P5Sketch />
-      <StaticImage
-        alt="Me with some cats in Rome"
-        src="../images/david.jpeg"
-      />
+      
     </Layout>
   )
 }
