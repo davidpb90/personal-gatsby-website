@@ -1,18 +1,8 @@
 import * as React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
 import {
-    container,
-    heading,
-    navLinks,
-    navLinkItem,
+    p,
     navLinkText,
-    siteTitle,
-    wrapper,
-    mainContainer,
-    main,
-    rightNavbar,
-    brand,
-    navbar,
     footer
 } from './layout.module.scss'
 
@@ -33,7 +23,7 @@ const Footer = ({ pageTitle, children }) => {
                     <Link to="/contact" className={navLinkText}>
                     Contact Me
                     </Link>
-                    <p>Designed and built by David Pardo Bernal</p>
+                    <p className={p}>Designed and built by David Pardo Bernal</p>
                 </footer>
     )
 }
