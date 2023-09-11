@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
-import NavBar from '../navbar/navbar'
+import NavBar from '../navbar/index'
 import Footer from '../footer'
 import Header from '../header'
 import {
