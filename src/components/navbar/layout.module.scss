@@ -1,0 +1,10 @@
+@use '../../scss/main';
+$font-stack: Helvetica, "Open Sans";
+;
+$primary-color: #333;
+
+.nav-link-item {
+    text-align: right;
+    margin-left: 10px;
+    padding-left: 10px;
+}
