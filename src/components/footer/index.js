@@ -4,7 +4,7 @@ import {
     p,
     navLinkText,
     footer
-} from './layout.module.scss'
+} from './footer.module.scss'
 
 const Footer = ({ pageTitle, children }) => {
     const data = useStaticQuery(graphql`

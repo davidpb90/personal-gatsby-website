@@ -7,7 +7,7 @@ import Moon from "../../images/moon.svg";
 
 import {
     div
-} from './layout.module.scss'
+} from './header.module.scss'
 // import '../scss/main.scss';
 
 const isBrowser = typeof window !== "undefined";
