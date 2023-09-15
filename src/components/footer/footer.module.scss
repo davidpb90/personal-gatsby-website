@@ -13,7 +13,53 @@ $primary-color: #333;
 }
 
 .footer {
-    flex: 0 0 25%;
-    order: 2;
     text-align: center;
+}
+
+@media all and (max-width: 600px) {
+
+    /* We tell both sidebars to share a row */
+    
+
+    .footer {
+        flex: 0 0 25%;
+        order: 2;
+    }
+
+   
+   
+    /*  .title { flex: 1 0px; order: 1; }*/
+    /*  .subtitle { flex: 1 0px; order: 2; }*/
+}
+
+/* Medium screens */
+@media all and (min-width:600px) and (max-width: 800px) {
+
+    /* We tell both sidebars to share a row */
+   
+
+    .footer {
+        flex: 0 0 25%;
+        order: 2;
+    }
+
+   
+
+    /*  .title { flex: 1 0px; order: 1; }*/
+    /*  .subtitle { flex: 1 0px; order: 2; }*/
+}
+
+/* Large screens */
+@media all and (min-width: 800px) {
+
+    /* We invert order of first sidebar and main
+   * And tell the main element to take twice as much width as the other two sidebars 
+   */
+   
+    /*  .title { flex: 1 0px; order: 1; }*/
+    /*  .subtitle { flex: 1 0px; order: 2; }*/
+    .footer {
+        flex: 1 0px;
+        order: 2;
+    }
 }

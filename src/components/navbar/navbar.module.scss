@@ -13,3 +13,154 @@ $primary-color: #333;
 //     display: flex;
 //     align-items: flex-end;
 // }
+
+@media all and (max-width: 600px) {
+
+    /* We tell both sidebars to share a row */
+   
+
+    .right-navbar {
+        flex: 1 0px;
+        order: 1;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    .brand {
+        flex: 0 0 80%;
+        order: 1;
+        align-content: flex-start;
+        align-self: flex-start;
+        text-align: left !important;
+    }
+
+    .navbar {
+        /*  	flex: 10 0px; */
+        order: 3;
+        flex-flow: column wrap;
+        align-content: flex-end;
+        display: none;
+    }
+
+    .navbar ul {
+        flex-flow: column wrap;
+    }
+
+    .navbar-toggleShow {
+        display: flex;
+        flex: 0 0 100%;
+        order: 3;
+        flex-flow: column wrap;
+        align-content: flex-end;
+    }
+
+    .navbar-toggle {
+        flex: 0 0 10%;
+        align-self: flex-start;
+        display: initial;
+        /*    position: absolute;*/
+        cursor: pointer;
+        order: 2;
+    }
+
+   
+
+    /*  .title { flex: 1 0px; order: 1; }*/
+    /*  .subtitle { flex: 1 0px; order: 2; }*/
+}
+
+/* Medium screens */
+@media all and (min-width:600px) and (max-width: 800px) {
+
+    /* We tell both sidebars to share a row */
+    
+
+    .right-navbar {
+        flex: 1 0px;
+        order: 1;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    .brand {
+        flex: 0 0 80%;
+        order: 1;
+        align-content: flex-start;
+        align-self: flex-start;
+        text-align: left !important;
+    }
+
+    .navbar {
+        /*  	flex: 10 0px; */
+        order: 3;
+        flex-flow: column wrap;
+        align-content: flex-end;
+        display: none;
+    }
+
+    .navbar ul {
+        flex-flow: column wrap;
+    }
+
+    .navbar-toggleShow {
+        display: flex;
+        flex: 0 0 100%;
+        order: 3;
+        flex-flow: column wrap;
+        align-content: flex-end;
+    }
+
+    .navbar-toggle {
+        flex: 0 0 10%;
+        align-self: flex-start;
+        display: initial;
+        /*    position: absolute;*/
+        cursor: pointer;
+        order: 2;
+    }
+
+    
+    /*  .title { flex: 1 0px; order: 1; }*/
+    /*  .subtitle { flex: 1 0px; order: 2; }*/
+}
+
+/* Large screens */
+@media all and (min-width: 800px) {
+
+    /* We invert order of first sidebar and main
+   * And tell the main element to take twice as much width as the other two sidebars 
+   */
+    
+
+    .right-navbar {
+        flex: 1 0px;
+        order: 2;
+        flex-flow: column wrap;
+        align-self: flex-start;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+
+    .brand {
+        flex: 1 0px;
+        order: 1;
+        align-self: flex-end;
+    }
+
+    .navbar {
+        flex: 10 0px;
+        order: 2;
+        flex-flow: column wrap;
+    }
+
+    .navbar ul {
+        flex-flow: column wrap;
+    }
+
+    .navbar-toggle {
+        display: none;
+        order: 3;
+    }
+
+   
+}
