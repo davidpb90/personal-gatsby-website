@@ -4,7 +4,8 @@
 @use '2-themes/themes-dir';
 // base
 @use '3-base/base-dir';
-@use '4-components/components-dir';
+@use '4-layout/layout-dir';
+@use '5-components/components-dir';
 //layout
 //@import './layout/header';
 //@import './layout/grids';

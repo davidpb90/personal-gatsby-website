@@ -5,7 +5,12 @@ import Footer from '../footer'
 import Header from '../header/header'
 import {
     container,
+    container__row,
     heading,
+    container__col12,
+    container__col10,
+    container__col2,
+    hiddenMdDown,
     navLinks,
     navLinkItem,
     navLinkText,
@@ -37,10 +42,15 @@ const Layout = ({ pageTitle, children }) => {
             backgroundColor: 'var(--bg)',
             color: 'var(--textNormal)',
             transition: 'color 0.2s ease-out, background 0.2s ease-out',
-        }} className={wrapper}>
+        }} className={container}>
             
-	  		<div className={mainContainer}>
-                <main className={main}>
+	  		<div className={container__row}>
+                <div className={container__col2 + ' ' + hiddenMdDown}>    
+                    <NavBar>
+
+                    </NavBar>
+                </div>
+                <main className={container__col10}>
                     <h1 className={heading}>{pageTitle}</h1>
                     {children}
 	    			{/* <h1 className={text}-left py-1 px-2 mx-2">David Pardo Bernal</h1> */}
@@ -49,12 +59,14 @@ const Layout = ({ pageTitle, children }) => {
 	    			{/* </p> */}
 	    		    {/* <script src="js/p5-sketches.js"></script> */}
 	    		</main>
-	    		<NavBar> 
-
-                </NavBar>
-	  		</div>	
-            <Footer>
-            </Footer>
+	    		
+	  		</div>
+            <div className={container__row}>
+                <div className={container__col12}>   
+                    <Footer>
+                    </Footer>
+                </div>
+            </div>	
 		</div>
         
        
