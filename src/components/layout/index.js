@@ -45,12 +45,12 @@ const Layout = ({ pageTitle, children }) => {
         }} className={container}>
             
 	  		<div className={container__row}>
-                <div className={container__col2 + ' ' + hiddenMdDown}>    
+                <div className={container__col1 + ' ' + hiddenMdDown}>    
                     <NavBar>
 
                     </NavBar>
                 </div>
-                <main className={container__col10}>
+                <main className={container__col11}>
                     <h1 className={heading}>{pageTitle}</h1>
                     {children}
 	    			{/* <h1 className={text}-left py-1 px-2 mx-2">David Pardo Bernal</h1> */}
