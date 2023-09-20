@@ -8,6 +8,8 @@ import {
     container__row,
     heading,
     container__col12,
+    container__col11,
+    container__col1,
     container__col10,
     container__col2,
     hiddenMdDown,
