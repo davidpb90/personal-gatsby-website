@@ -7,6 +7,7 @@ import {
     navLinks,
     navLinkItem,
     navLinkText,
+    container__col1,
     siteTitle,
     wrapper,
     mainContainer,
@@ -31,7 +32,7 @@ const NavBar = ({ pageTitle, children }) => {
     
     return (
         
-	    		<div className={rightNavbar}>
+        <div className={container__col1 + ' ' + rightNavbar}>
                    
 	    		  	<h3 className={brand}>DPB</h3>
 	    		  	{/* <div className={navbarToggle}>
