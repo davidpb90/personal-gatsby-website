@@ -25,7 +25,7 @@ import {
     navbar,
     footer
 } //from '../../scss/main.scss'
-from './layout.module.scss'
+from '../../scss/5-components/layout.module.scss'
 
 
 const Layout = ({ pageTitle, children }) => {

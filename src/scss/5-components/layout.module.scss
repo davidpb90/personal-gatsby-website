@@ -1,4 +1,11 @@
-@use '../../scss/main';
+// abstracts
+@use '../1-abstracts/abstracts-dir' as variables;
+// themes
+@use '../2-themes/themes-dir';
+// base
+@use '../3-base/base-dir';
+@use '../4-layout/layout-dir' as layout;
+
 $font-stack: Helvetica, "Open Sans";
 ;
 $primary-color: #333;
@@ -336,7 +343,7 @@ td {
 
 
 .container {
-    max-width: $grid__bp-md * 1px;
+    max-width: variables.$grid__bp-md * 1px;
     margin: 0 auto;
 
     &--fluid {
@@ -351,8 +358,8 @@ td {
     }
 
     @each $modifier ,
-    $breakpoint in $map-grid-props {
-        @include create-col-classes($modifier, $grid__cols, $breakpoint);
+    $breakpoint in variables.$map-grid-props {
+        @include layout.create-col-classes($modifier, variables.$grid__cols, $breakpoint);
     }
 }
 

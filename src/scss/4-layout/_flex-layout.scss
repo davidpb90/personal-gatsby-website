@@ -1,12 +1,6 @@
 @use '../1-abstracts/abstracts-dir' as variables;
 
-$map-grid-props: (
-    "": 0,
-    "-sm": variables.$grid__bp-sm,
-    "-md": variables.$grid__bp-md,
-    "-lg": variables.$grid__bp-lg,
-    "-xl": variables.$grid__bp-xl
-);
+
 
 @mixin create-mq($breakpoint, $min-or-max) {
     @if($breakpoint ==0) {
@@ -39,7 +33,7 @@ $map-grid-props: (
 }
 
 @each $modifier ,
-$breakpoint in $map-grid-props {
+$breakpoint in variables.$map-grid-props {
     @if($modifier =='') {
         $modifier: '-xs';
     }
