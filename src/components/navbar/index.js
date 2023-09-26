@@ -16,7 +16,7 @@ import {
     brand,
     navbar,
     footer
-} from './navbar.module.scss'
+} from '../../scss/5-components/navbar.module.scss'
 
 const NavBar = ({ pageTitle, children }) => {
     const data = useStaticQuery(graphql`
