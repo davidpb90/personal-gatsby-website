@@ -343,7 +343,7 @@ td {
 
 
 .container {
-    max-width: variables.$grid__bp-md * 1px;
+    max-width: variables.$grid__bp-xl * 1px;
     margin: 0 auto;
 
     &--fluid {
@@ -371,6 +371,58 @@ td {
 
     &__row {
         min-height: 30px;
+        background-color: #ffeead;
+
+        &.nested {
+            background-color: #ffcc5c;
+        }
+    }
+
+    @at-root {
+        [class*='container__col-'] {
+            &.higher {
+                min-height: 60px;
+            }
+
+            min-height: 30px;
+            background-color: #ff6f69;
+            outline: 1px solid #ffcc5c;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+    }
+}
+
+.big-container {
+    max-width: variables.$grid__bp-xl * 1px;
+    margin: 0 auto;
+
+    &--fluid {
+        margin: 0;
+        max-width: 100%;
+    }
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    @each $modifier ,
+    $breakpoint in variables.$map-grid-props {
+        @include layout.create-col-classes($modifier, variables.$grid__cols, $breakpoint);
+    }
+}
+
+//Styling of grid for demostration purposes
+.big-container {
+    background-color: #88d8b0;
+    padding: 10px;
+    box-sizing: border-box;
+
+    &__row {
+        min-height: 500px;
         background-color: #ffeead;
 
         &.nested {

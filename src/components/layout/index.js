@@ -4,6 +4,13 @@ import NavBar from '../navbar/index'
 import Footer from '../footer'
 import Header from '../header/header'
 import {
+    bigContainer,
+    bigContainer__row,
+    bigContainer__col12,
+    bigContainer__col11,
+    bigContainer__col1,
+    bigContainer__col10,
+    bigContainer__col2,
     container,
     container__row,
     heading,
@@ -44,9 +51,8 @@ const Layout = ({ pageTitle, children }) => {
             backgroundColor: 'var(--bg)',
             color: 'var(--textNormal)',
             transition: 'color 0.2s ease-out, background 0.2s ease-out',
-        }} className={container}>
-            
-	  		<div className={container__row}>
+        }} className={bigContainer}>
+	  		<div className={bigContainer__row}>
                 <div className={container__col1 + ' ' + hiddenMdDown}>    
                     <NavBar>
 
