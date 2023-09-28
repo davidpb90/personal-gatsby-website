@@ -6,6 +6,7 @@ import Header from '../header/header'
 import {
     bigContainer,
     bigContainer__row,
+    bigContainerFluid,
     bigContainer__col12,
     bigContainer__col11,
     bigContainer__col1,
@@ -51,7 +52,7 @@ const Layout = ({ pageTitle, children }) => {
             backgroundColor: 'var(--bg)',
             color: 'var(--textNormal)',
             transition: 'color 0.2s ease-out, background 0.2s ease-out',
-        }} className={bigContainer}>
+        }} className={bigContainerFluid}>
 	  		<div className={bigContainer__row}>
                 <div className={container__col1 + ' ' + hiddenMdDown}>    
                     <NavBar>
