@@ -52,6 +52,9 @@ const Layout = ({ pageTitle, children }) => {
             backgroundColor: 'var(--bg)',
             color: 'var(--textNormal)',
             transition: 'color 0.2s ease-out, background 0.2s ease-out',
+            height: `100%`,
+            display: `flex`,
+            flexDirection: `column`,
         }} className={bigContainerFluid}>
 	  		<div className={bigContainer__row}>
                 <div className={container__col1 + ' ' + hiddenMdDown}>    

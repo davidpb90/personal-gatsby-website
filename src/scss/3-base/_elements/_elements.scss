@@ -33,6 +33,23 @@ $ds-brand-text-color:     functions.ds-color(primary, 400);
 $ds-secondary-text-color: functions.ds-color(neutral, 400);
 $ds-base-link-text-color: $ds-brand-text-color;
 
+html,
+body,
+#___gatsby,
+#gatsby-focus-wrapper {
+  height: 100% !important;
+  min-height: 100% !important;
+  width: 100% !important;
+  // position: absolute;
+}
+
+html,
+body {
+  // font: 100% $font-stack;
+  // color: $primary-color;
+  margin: 0;
+}
+
 body {
   color: var(--color-text);
   background-color: var(--color-background);
