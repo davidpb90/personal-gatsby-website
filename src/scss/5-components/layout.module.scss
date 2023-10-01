@@ -342,6 +342,7 @@ td {
 .container {
     max-width: variables.$grid__bp-xl * 1px;
     margin: 0 auto;
+    height: 80%;
 
     &--fluid {
         margin: 0;
@@ -352,6 +353,7 @@ td {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
+       
     }
 
     @each $modifier ,
