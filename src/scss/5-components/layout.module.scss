@@ -369,7 +369,7 @@ td {
     box-sizing: border-box;
 
     &__row {
-        min-height: 30px;
+        min-height: 4%;
         background-color: #ffeead;
 
         &.nested {
@@ -383,7 +383,7 @@ td {
                 min-height: 60px;
             }
 
-            min-height: 30px;
+            min-height: 7%;
             background-color: #ff6f69;
             outline: 1px solid #ffcc5c;
             display: flex;
@@ -411,6 +411,7 @@ td {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
+        min-height: 93%;
     }
 
     @each $modifier ,
@@ -426,7 +427,7 @@ td {
     box-sizing: border-box;
 
     &__row {
-        min-height: 500px;
+        // min-height: 500px;
         background-color: #ffeead;
 
         &.nested {
