@@ -12,6 +12,12 @@ import {
     bigContainer__col1,
     bigContainer__col10,
     bigContainer__col2,
+    bigContainer__colSm4,
+    bigContainer__colSm8,
+    bigContainer__colMd2,
+    bigContainer__colMd10,
+    bigContainer__colLg2,
+    bigContainer__colLg10,
     container,
     container__row,
     heading,
@@ -20,6 +26,7 @@ import {
     container__col1,
     container__col10,
     container__col2,
+    hiddenSmDown,
     hiddenMdDown,
     navLinks,
     navLinkItem,
@@ -57,12 +64,12 @@ const Layout = ({ pageTitle, children }) => {
             flexDirection: `column`,
         }} className={bigContainerFluid}>
 	  		<div className={bigContainer__row}>
-                <div className={container__col1 + ' ' + hiddenMdDown}>    
+                <div className={bigContainer__col1 + ' ' + hiddenSmDown + ' ' + bigContainer__colLg2 + ' ' + bigContainer__colMd2 + ' ' + bigContainer__colSm4}>    
                     <NavBar>
 
                     </NavBar>
                 </div>
-                <main className={container__col11}>
+                <main className={bigContainer__col11 + ' ' + bigContainer__colLg10 + ' ' + bigContainer__colMd10 + ' ' + bigContainer__colSm8}>
                     <h1 className={heading}>{pageTitle}</h1>
                     {children}
 	    			{/* <h1 className={text}-left py-1 px-2 mx-2">David Pardo Bernal</h1> */}
