@@ -409,7 +409,8 @@ td {
 
     &__row {
         display: flex;
-        flex-wrap: wrap;
+        justify-content: space-around;
+        // flex-wrap: wrap;
         width: 100%;
         min-height: 93%;
     }
