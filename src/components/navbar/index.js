@@ -17,53 +17,9 @@ import {
     navbar,
     footer
 } from '../../scss/5-components/navbar.module.scss'
+import { slide as Menu } from "react-burger-menu"
 
-// import logo from '../img/logo.svg';
 
-// class Navbar extends React.Component {
-
-//     state = { showMenu: false }
-
-//     toggleMenu = () => {
-//         this.setState({
-//             showMenu: !this.state.showMenu
-//         })
-//     }
-
-//     render() {
-//         const menuActive = this.state.showMenu ? 'is-active' : '';
-//         const burgerActive = this.state.showMenu ? 'is-active' : '';
-//         return (
-//             <nav className="navbar">
-//                 <div className="navbar-brand">
-//                     <Link className="navbar-item" to="/">
-//                         <img src={logo} style={{ width: '88px' }} itemprop="image" alt="" />
-//                     </Link>
-//                     <div className={`navbar-burger burger ${burgerActive}`} onClick={this.toggleMenu}>
-//                         <span></span>
-//                         <span></span>
-//                         <span></span>
-//                     </div>
-//                 </div>
-
-//                 <div className={`navbar-menu ${menuActive}`} >
-//                     <div className="navbar-start">
-//                         <Link className="navbar-link" to="/" onClick={this.toggleMenu}>
-//                             Home
-//                         </Link>
-//                         <Link className="navbar-link" to="/services" onClick={this.toggleMenu}>
-//                             Services
-//                         </Link>
-//                         <Link className="navbar-link" to="/contact" onClick={this.toggleMenu}>
-//                             Contact
-//                         </Link>
-//                     </div>
-//                 </div>
-//             </nav>)
-//     }
-// };
-
-// export default Navbar;
 
 const NavBar = ({ pageTitle, children }) => {
     const data = useStaticQuery(graphql`
@@ -75,23 +31,23 @@ const NavBar = ({ pageTitle, children }) => {
             }
         }
     `)
+
     
     
     return (
-        
-        <div className={container__col1 + ' ' + rightNavbar}>
-                   
+        <Menu>
+            <div className={container__col1 + ' ' + rightNavbar}>
 	    		  	<h3 className={brand}>DPB</h3>
 	    		  	{/* <div className={navbarToggle}>
 	    		  		<i className={fas}></i>
 	    		  	</div> */}
-	    		  	<nav className={navbar}>
+                    <nav className={navbar}>
                         <Header>
                         
                         </Header>
                         <ul className={navLinks}>
 	    		    		<li className={navLinkItem}> 
-                                <Link to="/" className={navLinkText}>
+                            <Link to="/" className={navLinkText}>
                                     Home
                                 </Link>
                             </li>
@@ -140,7 +96,7 @@ const NavBar = ({ pageTitle, children }) => {
 	    		    	</ul>
 	    		  	</nav>
 	    		</div>
-	  		
+        </Menu>	
 
         // <div className={container}>
         //     <header className={siteTitle}>{data.site.siteMetadata.title}</header>
