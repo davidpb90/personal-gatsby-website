@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
-import NavBar from '../navbar/index'
+import Menu from '../menu'
 import Footer from '../footer'
 import Header from '../header/header'
 import {
@@ -64,11 +64,9 @@ const Layout = ({ pageTitle, children }) => {
             flexDirection: `column`,
         }} className={bigContainerFluid}>
 	  		<div className={bigContainer__row}>
-                <div className={bigContainer__col1 + ' ' + hiddenSmDown + ' ' + bigContainer__colLg2 + ' ' + bigContainer__colMd2 + ' ' + bigContainer__colSm4}>    
-                    <NavBar>
-
-                    </NavBar>
-                </div>
+                {/* <div className={bigContainer__col1 + ' ' + hiddenSmDown + ' ' + bigContainer__colLg2 + ' ' + bigContainer__colMd2 + ' ' + bigContainer__colSm4}>     */}
+                <Menu width={250}/>
+                {/* </div> */}
                 <main className={bigContainer__col11 + ' ' + bigContainer__colLg10 + ' ' + bigContainer__colMd10 + ' ' + bigContainer__colSm8}>
                     <h1 className={heading}>{pageTitle}</h1>
                     {children}
