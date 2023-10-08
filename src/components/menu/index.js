@@ -15,9 +15,15 @@ import {
     rightNavbar,
     brand,
     navbar,
-    footer
+    footer,
+    bmCross,
+    bmBurgerButton,
+    bmBurgerBars,
+    bmBurgerBarsHover,
+    bmCrossButton
 } from '../../scss/5-components/menu.module.scss'
 import { slide as Menu } from "react-burger-menu"
+import '../../scss/5-components/menu.module.scss'
 
 
 
@@ -80,7 +86,7 @@ export default props => {
 	    // 		</div>
         // </Menu>	
 
-        <Menu {...props}>
+        <Menu className={bmBurgerButton + ' ' + bmBurgerBars + ' ' + bmCross} {...props}>
             {/* <div className={container__col1 + ' ' + rightNavbar}> */}
             <a className={brand}>DPB</a>
             <Header>
