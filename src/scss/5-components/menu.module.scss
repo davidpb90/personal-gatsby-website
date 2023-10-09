@@ -1,79 +1,133 @@
-// @use '../../scss/main';
+// // @use '../../scss/main';
 
-/* Position and sizing of burger button */
-.bm-burger-button {
-    position: fixed;
-    width: 36px;
-    height: 30px;
-    left: 36px;
-    top: 36px;
-    background-color: blue;
-}
+// /* Position and sizing of burger button */
+// .bm-burger-button {
+//     position: fixed;
+//     width: 36px;
+//     height: 30px;
+//     left: 36px;
+//     top: 36px;
+//     background-color: blue;
+// }
 
-/* Color/shape of burger icon bars */
-.bm-burger-bars {
-    background: #373a47;
-}
+// /* Color/shape of burger icon bars */
+// .bm-burger-bars {
+//     background: #373a47;
+// }
 
-/* Color/shape of burger icon bars on hover*/
-.bm-burger-bars-hover {
-    background: #a90000;
-}
+// /* Color/shape of burger icon bars on hover*/
+// .bm-burger-bars-hover {
+//     background: #a90000;
+// }
 
-/* Position and sizing of clickable cross button */
-.bm-cross-button {
-    height: 24px;
-    width: 24px;
-}
+// /* Position and sizing of clickable cross button */
+// .bm-cross-button {
+//     height: 24px;
+//     width: 24px;
+// }
 
-/* Color/shape of close button cross */
-.bm-cross {
-    background: #bdc3c7;
-}
+// /* Color/shape of close button cross */
+// .bm-cross {
+//     background: #bdc3c7;
+// }
 
-/*
-Sidebar wrapper styles
-Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
-*/
-.bm-menu-wrap {
-    position: fixed;
-    height: 100%;
-}
+// /*
+// Sidebar wrapper styles
+// Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+// */
+// .bm-menu-wrap {
+//     position: fixed;
+//     height: 100%;
+// }
 
-/* General sidebar styles */
-.bm-menu {
-    background: #373a47;
-    padding: 2.5em 1.5em 0;
-    font-size: 1.15em;
-}
+// /* General sidebar styles */
+// .bm-menu {
+//     background: #373a47;
+//     padding: 2.5em 1.5em 0;
+//     font-size: 1.15em;
+// }
 
-/* Morph shape necessary with bubble or elastic */
-.bm-morph-shape {
-    fill: #373a47;
-}
+// /* Morph shape necessary with bubble or elastic */
+// .bm-morph-shape {
+//     fill: #373a47;
+// }
 
-/* Wrapper for item list */
-.bm-item-list {
-    color: #b8b7ad;
-    padding: 0.8em;
-}
+// /* Wrapper for item list */
+// .bm-item-list {
+//     color: #b8b7ad;
+//     padding: 0.8em;
+// }
 
-/* Individual item */
-.bm-item {
-    display: inline-block;
+// /* Individual item */
+// .bm-item {
+//     display: inline-block;
 
-    color: #d1d1d1;
-    margin-bottom: 10px;
+//     color: #d1d1d1;
+//     margin-bottom: 10px;
+//     text-align: left;
+//     text-decoration: none;
+//     transition: color 0.2s;
+// }
+
+// .bm-item:hover {
+//     color: #ffffff;
+// }
+
+// /* Styling of overlay */
+// .bm-overlay {
+//     background: rgba(0, 0, 0, 0.3);
+// }
+
+@use '../utility-functions/functions-base' as functions;
+@use '../utility-mixins/mixins-base' as mixins;
+
+$ds-primary-text-color: functions.ds-color(primary, 400);
+$ds-secondary-text-color: functions.ds-color(neutral, 400);
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: $ds-secondary-text-color;
+    height: 100vh;
     text-align: left;
+    padding: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease-in-out;
+
+// @media (max-width: $ {
+//         ({
+//             theme
+//         })=> theme.mobile
+
+// }) {
+//     width: 100%;
+}
+
+a {
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 2rem 0;
+    font-weight: bold;
+    letter-spacing: 0.5rem;
+    color: $primary;
     text-decoration: none;
-    transition: color 0.2s;
+    transition: color 0.3s linear;
+
+// @media (max-width: $ {
+//         ({
+//             theme
+//         })=> theme.mobile
+
+// }) {
+//     font-size: 1.5rem;
+//     text-align: center;
+// }
 }
 
-.bm-item:hover {
-    color: #ffffff;
+&:hover {
+    color: $ds-secondary-text-color;
 }
 
-/* Styling of overlay */
-.bm-overlay {
-    background: rgba(0, 0, 0, 0.3);
-}
