@@ -78,11 +78,10 @@
 //     background: rgba(0, 0, 0, 0.3);
 // }
 
-@use '../utility-functions/functions-base' as functions;
-@use '../utility-mixins/mixins-base' as mixins;
+@use '../../scss/main';
 
-$ds-primary-text-color: functions.ds-color(primary, 400);
-$ds-secondary-text-color: functions.ds-color(neutral, 400);
+$ds-primary-text-color: ds-color(primary, 400);
+$ds-secondary-text-color: ds-color(neutral, 400);
 
 nav {
     display: flex;
@@ -112,7 +111,7 @@ a {
     padding: 2rem 0;
     font-weight: bold;
     letter-spacing: 0.5rem;
-    color: $primary;
+    color: $ds-primary-text-color;
     text-decoration: none;
     transition: color 0.3s linear;
 
@@ -125,9 +124,11 @@ a {
 //     font-size: 1.5rem;
 //     text-align: center;
 // }
-}
 
-&:hover {
-    color: $ds-secondary-text-color;
+
+    &:hover {
+        color: $ds-secondary-text-color;
+    }
+
 }
 
