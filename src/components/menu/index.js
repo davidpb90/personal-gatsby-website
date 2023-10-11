@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
+import { bool } from 'prop-types';
 import Header from '../header/header'
 import {
     container,
@@ -25,15 +26,16 @@ import {
 } from '../../scss/5-components/menu.module.scss'
 
 
-const Menu = () => {
+const Menu = ({ open }) => {
     return (
      
-            <nav className={container__col1 + ' ' + nav}>
+        <nav className={nav} open={open}>
 	    		  	<h3 className={brand}>DPB</h3>
 	    		  	{/* <div className={navbarToggle}>
 	    		  		<i className={fas}></i>
 	    		  	</div> */}
-                    <div className={navbar}>
+                    <div> 
+                        {/* className={navbar}> */}
                         <Header>
                         
                         </Header>
@@ -83,10 +85,12 @@ const Menu = () => {
 	    		  	</div>
 	    		</nav>
           
-        )   
-    }
-    
-    export default Menu;
+    )   
+}
+Menu.propTypes = {
+    open: bool.isRequired,
+}
+export default Menu;
 
         // <Menu className={bmBurgerButton + ' ' + bmBurgerBars + ' ' + bmCross} {...props}>
         //     {/* <div className={container__col1 + ' ' + rightNavbar}> */}

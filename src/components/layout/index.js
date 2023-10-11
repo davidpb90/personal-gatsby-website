@@ -1,8 +1,9 @@
-import * as React from 'react'
+import React, { useState } from 'react';
 import { Link, useStaticQuery, graphql } from 'gatsby'
 import Menu from '../menu'
 import Footer from '../footer'
 import Header from '../header/header'
+import Burger from '../burger'
 import {
     bigContainer,
     bigContainer__row,
@@ -53,7 +54,7 @@ const Layout = ({ pageTitle, children }) => {
             }
         }
     `)
-    
+    const [open, setOpen] = useState(false);
     return (
         <div style={{
             backgroundColor: 'var(--bg)',
@@ -63,9 +64,11 @@ const Layout = ({ pageTitle, children }) => {
             display: `flex`,
             flexDirection: `column`,
         }} className={bigContainerFluid}>
+            <Burger open={open} setOpen={setOpen} />
+            <Menu open={open} setOpen={setOpen} />
 	  		<div className={bigContainer__row}>
                 {/* <div className={bigContainer__col1 + ' ' + hiddenSmDown + ' ' + bigContainer__colLg2 + ' ' + bigContainer__colMd2 + ' ' + bigContainer__colSm4}>     */}
-                <Menu width={250}/>
+                
                 {/* </div> */}
                 <main className={bigContainer__col11 + ' ' + bigContainer__colLg10 + ' ' + bigContainer__colMd10 + ' ' + bigContainer__colSm8}>
                     <h1 className={heading}>{pageTitle}</h1>
