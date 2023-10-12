@@ -2,8 +2,11 @@ import React, { useState } from 'react';
 import { Link, useStaticQuery, graphql } from 'gatsby'
 import Menu from '../menu'
 import Footer from '../footer'
-import Header from '../header/header'
+// import ModeToggle from '../mode-toggle'
 import Burger from '../burger'
+import Header from "../header"
+// import { cold } from 'react-hot-loader';
+// cold(Header);
 import {
     bigContainer,
     bigContainer__row,
@@ -64,8 +67,9 @@ const Layout = ({ pageTitle, children }) => {
             display: `flex`,
             flexDirection: `column`,
         }} className={bigContainerFluid}>
-            <Burger open={open} setOpen={setOpen} />
-            <Menu open={open} setOpen={setOpen} />
+            {/* <Burger open={open} setOpen={setOpen} /> */}
+            {/* <Menu open={open} setOpen={setOpen} /> */}
+            <Header siteTitle={data.site.siteMetadata.title} />
 	  		<div className={bigContainer__row}>
                 {/* <div className={bigContainer__col1 + ' ' + hiddenSmDown + ' ' + bigContainer__colLg2 + ' ' + bigContainer__colMd2 + ' ' + bigContainer__colSm4}>     */}
                 

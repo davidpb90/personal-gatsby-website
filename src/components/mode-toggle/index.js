@@ -13,18 +13,18 @@ import {
 const isBrowser = typeof window !== "undefined";
 
 function getDefaultTheme() {
-    const savedTheme = 
+    const savedTheme =
         isBrowser ? (
             window.localStorage.getItem("theme")
         ) : (
             null
         );
     return savedTheme ? savedTheme : "light";
-} 
+}
 
 
 
-const Header = props => {
+const ModeToggle = props => {
     const [isDark, setIsDark] = useState(getDefaultTheme());
 
     useEffect(() => {
@@ -54,4 +54,4 @@ const Header = props => {
     );
 };
 
-export default Header;
+export default ModeToggle;

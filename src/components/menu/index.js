@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
 import { bool } from 'prop-types';
-import Header from '../header/header'
+import Header from '../header'
 import {
     container,
     heading,
@@ -24,21 +24,28 @@ import {
     bmCrossButton,
     nav
 } from '../../scss/5-components/menu.module.scss'
+import ModeToggle from '../mode-toggle';
 
 
-const Menu = ({ open }) => {
+// const Menu = ({ open }) => {
+const Menu = ({ isActive, toggleAction, }) => { 
+    const getClass = () => (
+        "side-menu" + (isActive ? " active" : "")
+    );
     return (
      
-        <nav className={nav} open={open}>
+        // <nav className={nav} open={open}>
+        <div className={getClass()} > 
+            <div className="menu-button close-button" onClick={() => { toggleAction(false) }} />
 	    		  	<h3 className={brand}>DPB</h3>
 	    		  	{/* <div className={navbarToggle}>
 	    		  		<i className={fas}></i>
 	    		  	</div> */}
                     <div> 
                         {/* className={navbar}> */}
-                        <Header>
+                        <ModeToggle>
                         
-                        </Header>
+                        </ModeToggle>
                         <ul className={navLinks}>
 	    		    		<li className={navLinkItem}> 
                             <Link to="/" className={a}>
@@ -83,13 +90,14 @@ const Menu = ({ open }) => {
 	    		    		
 	    		    	</ul>
 	    		  	</div>
-	    		</nav>
+            	</div>                    
+	    	//  </nav>
           
     )   
 }
-Menu.propTypes = {
-    open: bool.isRequired,
-}
+// Menu.propTypes = {
+//     open: bool.isRequired,
+// }
 export default Menu;
 
         // <Menu className={bmBurgerButton + ' ' + bmBurgerBars + ' ' + bmCross} {...props}>
