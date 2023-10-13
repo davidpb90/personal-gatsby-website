@@ -69,7 +69,9 @@ const Layout = ({ pageTitle, children }) => {
         }} className={bigContainerFluid}>
             {/* <Burger open={open} setOpen={setOpen} /> */}
             {/* <Menu open={open} setOpen={setOpen} /> */}
-            <Header siteTitle={data.site.siteMetadata.title} />
+            <div className={bigContainer__row}>
+                <Header siteTitle={data.site.siteMetadata.title} />
+            </div>
 	  		<div className={bigContainer__row}>
                 {/* <div className={bigContainer__col1 + ' ' + hiddenSmDown + ' ' + bigContainer__colLg2 + ' ' + bigContainer__colMd2 + ' ' + bigContainer__colSm4}>     */}
                 
