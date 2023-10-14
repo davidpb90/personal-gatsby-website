@@ -10,6 +10,8 @@ import Header from "../header"
 import {
     bigContainer,
     bigContainer__row,
+    headerContainer__row,
+    headerContainer__col12,
     bigContainerFluid,
     bigContainer__col12,
     bigContainer__col11,
@@ -69,8 +71,10 @@ const Layout = ({ pageTitle, children }) => {
         }} className={bigContainerFluid}>
             {/* <Burger open={open} setOpen={setOpen} /> */}
             {/* <Menu open={open} setOpen={setOpen} /> */}
-            <div className={bigContainer__row}>
-                <Header siteTitle={data.site.siteMetadata.title} />
+            <div className={headerContainer__row}>
+                <div className={headerContainer__col12}>
+                    <Header siteTitle={data.site.siteMetadata.title} />
+                </div>
             </div>
 	  		<div className={bigContainer__row}>
                 {/* <div className={bigContainer__col1 + ' ' + hiddenSmDown + ' ' + bigContainer__colLg2 + ' ' + bigContainer__colMd2 + ' ' + bigContainer__colSm4}>     */}

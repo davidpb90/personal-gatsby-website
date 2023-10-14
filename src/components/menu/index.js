@@ -22,7 +22,11 @@ import {
     bmBurgerBars,
     bmBurgerBarsHover,
     bmCrossButton,
-    nav
+    nav,
+    menuButton,
+    closeButton,
+    sideMenu,
+    active
 } from '../../scss/5-components/menu.module.scss'
 import ModeToggle from '../mode-toggle';
 
@@ -30,22 +34,15 @@ import ModeToggle from '../mode-toggle';
 // const Menu = ({ open }) => {
 const Menu = ({ isActive, toggleAction, }) => { 
     const getClass = () => (
-        "side-menu" + (isActive ? " active" : "")
+        (isActive ? sideMenu + ' ' + active : sideMenu)
     );
     return (
      
         // <nav className={nav} open={open}>
         <div className={getClass()} > 
-            <div className="menu-button close-button" onClick={() => { toggleAction(false) }} />
-	    		  	<h3 className={brand}>DPB</h3>
-	    		  	{/* <div className={navbarToggle}>
-	    		  		<i className={fas}></i>
-	    		  	</div> */}
-                    <div> 
-                        {/* className={navbar}> */}
-                        <ModeToggle>
-                        
-                        </ModeToggle>
+            <div className={menuButton + ' ' + closeButton} onClick={() => { toggleAction(false) }} />
+	    		  	
+                       
                         <ul className={navLinks}>
 	    		    		<li className={navLinkItem}> 
                             <Link to="/" className={a}>
@@ -89,9 +86,9 @@ const Menu = ({ isActive, toggleAction, }) => {
                             </li>
 	    		    		
 	    		    	</ul>
-	    		  	</div>
-            	</div>                    
-	    	//  </nav>
+	    </div>
+                           
+
           
     )   
 }

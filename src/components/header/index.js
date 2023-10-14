@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-
+import ModeToggle from '../mode-toggle';
 import Menu from "../menu"
 
 import {
@@ -9,7 +9,9 @@ import {
     menuTogglewrap,
     menuButton,
     mainButton,
-    header
+    header,
+    darkModeToggle,
+    brand
 
 } from '../../scss/5-components/header.module.scss'
 
@@ -32,15 +34,23 @@ class Header extends React.Component {
             <>
                 <header className={header}>
                     <div className={headbar}>
-                        <h1>
-                            <Link to="/">{this.props.siteTitle}</Link>
-                        </h1>
+                        <div className={menuTogglewrap}>
+                            <div className={menuButton + ' ' + mainButton} onClick={() => { this.toggleMenu() }} />
+                        </div>
+                        <h3 className={brand}>DPB</h3>
+                        <div className={darkModeToggle}>
+                            <ModeToggle>
+
+                            </ModeToggle>
+                        </div>
+                            {/* <Link to="/">{this.props.siteTitle}</Link> */}
+                        
+                        
                     </div>
-                    <div className={menuTogglewrap}>
-                        <div className={menuButton + ' ' + mainButton} onClick={() => { this.toggleMenu() }} />
-                    </div>
+                    
                 </header>
                 <Menu isActive={this.state.menuShow} toggleAction={this.toggleMenu} />
+                
             </>
         )
     }
