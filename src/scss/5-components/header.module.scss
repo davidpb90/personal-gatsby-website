@@ -95,15 +95,20 @@
     left: 0;
     height: 100%;
     transition: all .3s;
+    z-index: 100;
 }
 
 .side-menu ul {
     margin: 10px 0;
     border-top: rebeccapurple thin solid;
+    position: absolute;
+    z-index: 101;
 }
 
 .side-menu li {
     list-style: none;
     padding: 10px;
     width: 0%;
+    position: absolute;
+    z-index: 102;
 }

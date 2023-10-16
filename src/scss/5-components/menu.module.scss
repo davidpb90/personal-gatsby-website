@@ -114,6 +114,8 @@ a {
     color: $ds-primary-text-color;
     text-decoration: none;
     transition: color 0.3s linear;
+    position: absolute;
+    z-index: 103;
 
 // @media (max-width: $ {
 //         ({
@@ -137,6 +139,7 @@ a {
 
 
 .menu-button {
+    position: sticky;
     cursor: pointer;
     background-color: #EEE;
     text-align: center;
@@ -146,19 +149,24 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    z-index: 99;
 }
 
 .main-button {
+    position: sticky;
     height: 32px;
     width: 32px;
+    z-index: 98;
     // background-image: url('../images/menuIcon.png');
 }
 
 .close-button {
+    position: sticky;
     height: 32px;
     width: 32px;
     // background-image: url('../images/menuClose.png');
     background-color: initial;
+    z-index: 97;
 }
 
 .side-menu .close-button {
@@ -172,6 +180,7 @@ a {
 
 .side-menu {
     display: none;
+    position: sticky;
     // position: absolute;
     // top: 0;
     // right: 0;
@@ -190,18 +199,17 @@ a {
     transition: all .3s;
     // width: 33.33%;
     float: left;
-    position: absolute;
     z-index: 100;
 }
 
 .side-menu ul {
+    position: sticky;
     margin: 10px 0;
     border-top: rebeccapurple thin solid;
     margin-top: 5px;
     list-style-type: none;
     height: 0px;
     overflow: hidden;    
-    position: absolute;
     /* <-- added declarations */
     left: 0;
     top: 100%;
@@ -209,12 +217,38 @@ a {
     width: 100%;
     /*     and here...        */    
     transition: height 1s ease;
-    //z-index: 100;
+    z-index: 101;
 }
 
 .side-menu li {
     list-style: none;
     padding: 10px;
     width: 0%;
-    //z-index: 100;
+    z-index: 102;
+}
+
+.nav-links {
+    position: sticky;
+    margin: 10px 0;
+    border-top: rebeccapurple thin solid;
+    margin-top: 5px;
+    list-style-type: none;
+    height: 0px;
+    overflow: hidden;
+    /* <-- added declarations */
+    left: 0;
+    top: 100%;
+    /*     here               */
+    width: 100%;
+    /*     and here...        */
+    transition: height 1s ease;
+    z-index: 101;
+}
+
+.nav-link-items {
+    position: sticky;
+    list-style: none;
+    padding: 10px;
+    width: 0%;
+    z-index: 102;
 }

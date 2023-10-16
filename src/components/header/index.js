@@ -32,6 +32,7 @@ class Header extends React.Component {
     render() {
         return (
             <>
+                <Menu isActive={this.state.menuShow} toggleAction={this.toggleMenu} />
                 <header className={header}>
                     <div className={headbar}>
                         <div className={menuTogglewrap}>
@@ -49,7 +50,7 @@ class Header extends React.Component {
                     </div>
                     
                 </header>
-                <Menu isActive={this.state.menuShow} toggleAction={this.toggleMenu} />
+                
                 
             </>
         )
