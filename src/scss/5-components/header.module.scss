@@ -1,13 +1,16 @@
 .header {
+    position: relative;
     background: rebeccapurple;
     margin-bottom: 1.45rem;
     display: flex !important;
     flex-direction: row;
     justify-content: space-between;
     min-width: 100%;
+    
 }
 
 .headbar {
+    position: relative;
     margin: 0 auto;
     max-width: 960px;
     padding: 1.45rem 5px;

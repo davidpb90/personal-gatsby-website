@@ -180,13 +180,20 @@ a {
 
 .side-menu {
     display: none;
-    position: sticky;
+    // position: relative;
     // position: absolute;
     // top: 0;
     // right: 0;
     // background: white;
     // padding: 10px 20px;
     // border: 2px solid #baa4d0;
+    position: sticky;
+        /* <-- added declarations */
+    left: 0;
+    top: 100%;
+        /*     here               */
+    width: 100%;
+        /*     and here...        */
     flex-direction: column;
     justify-content: space-between;
     transform: translate3d(-280px, 0px, 0px);
