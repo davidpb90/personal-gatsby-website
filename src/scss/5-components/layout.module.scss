@@ -364,16 +364,16 @@ td {
 
 //Styling of grid for demostration purposes
 .container {
-    background-color: #88d8b0;
+    // background-color: #88d8b0;
     padding: 10px;
     box-sizing: border-box;
 
     &__row {
         min-height: 4%;
-        background-color: #ffeead;
+        // background-color: #ffeead;
 
         &.nested {
-            background-color: #ffcc5c;
+            // background-color: #ffcc5c;
         }
     }
 
@@ -384,8 +384,8 @@ td {
             }
 
             min-height: 7%;
-            background-color: #ff6f69;
-            outline: 1px solid #ffcc5c;
+            // background-color: #ff6f69;
+            // outline: 1px solid #ffcc5c;
             display: flex;
             align-items: center;
             justify-content: space-around;
@@ -423,16 +423,16 @@ td {
 
 //Styling of grid for demostration purposes
 .big-container {
-    background-color: #88d8b0;
+    // background-color: #88d8b0;
     padding: 10px;
     box-sizing: border-box;
 
     &__row {
         // min-height: 500px;
-        background-color: #ffeead;
+        // background-color: #ffeead;
 
         &.nested {
-            background-color: #ffcc5c;
+            // background-color: #ffcc5c;
         }
     }
 
@@ -443,8 +443,8 @@ td {
             }
 
             min-height: 30px;
-            background-color: #ff6f69;
-            outline: 1px solid #ffcc5c;
+            // background-color: #ff6f69;
+            // outline: 1px solid #ffcc5c;
             display: flex;
             align-items: center;
             justify-content: space-around;
@@ -481,16 +481,16 @@ td {
 }
 
 .header-container {
-    background-color: #88d8b0;
+    // background-color: #88d8b0;
     padding: 10px;
     box-sizing: border-box;
 
     &__row {
         // min-height: 500px;
-        background-color: #ffeead;
+        // background-color: #ffeead;
 
         &.nested {
-            background-color: #ffcc5c;
+            // background-color: #ffcc5c;
         }
     }
 
@@ -501,8 +501,8 @@ td {
             }
 
             min-height: 30px;
-            background-color: #ff6f69;
-            outline: 1px solid #ffcc5c;
+            // background-color: #ff6f69;
+            // outline: 1px solid #ffcc5c;
             display: flex;
             align-items: center;
             justify-content: space-around;
