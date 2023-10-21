@@ -1,34 +1,16 @@
 import * as React from 'react'
-import { Link, useStaticQuery, graphql } from 'gatsby'
-import { bool } from 'prop-types';
-import Header from '../header'
+import { Link } from 'gatsby'
 import {
-    container,
-    heading,
+   
     navLinks,
     navLinkItem,
     a,
-    container__col1,
-    siteTitle,
-    wrapper,
-    mainContainer,
-    main,
-    rightNavbar,
-    brand,
-    navbar,
-    footer,
-    bmCross,
-    bmBurgerButton,
-    bmBurgerBars,
-    bmBurgerBarsHover,
-    bmCrossButton,
-    nav,
     menuButton,
     closeButton,
     sideMenu,
     active
 } from '../../scss/5-components/menu.module.scss'
-import ModeToggle from '../mode-toggle';
+
 
 
 // const Menu = ({ open }) => {

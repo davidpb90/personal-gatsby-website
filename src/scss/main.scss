@@ -1,11 +1,11 @@
 // abstracts
-@use '1-abstracts/abstracts-dir';
+@use '1-abstracts/abstracts-dir' as variables;
 // themes
 @use '2-themes/themes-dir';
 // base
 @use '3-base/base-dir';
 @use '4-layout/layout-dir';
-@use '5-components/components-dir';
+// @use '5-components/components-dir';
 //layout
 //@import './layout/header';
 //@import './layout/grids';
@@ -25,4 +25,88 @@ body {
     // font: 100% $font-stack;
     // color: $primary-color;
     margin: 0;
+}
+
+:root {
+    --color-primary: #CD104D;
+    --color-text: #2e353f;
+    --color-text-light: #4f5969;
+    --color-heading: #1a202c;
+    --color-heading-black: #000000;
+    --color-accent: #d1dce5;
+    --color-background: #FFFFFF;
+    --dark-mode: #000;
+    --dark-mode-hf: #CD104D;
+}
+
+/* 2 */
+body {
+    color: var(--color-text);
+    background-color: var(--color-background);
+}
+
+/* 3 */
+body.dark {
+    --color-background: #1a202c; //variables.$ds-theme-color-primary-400; //ds-color(tertiary, 400); //#171717;
+    --color-primary: variables.$ds-theme-color-tertiary-400; //ds-color(primary, 400); //#CD104D;
+    --color-text: #ffffff;
+    --color-text-light: #4f5969;
+    --color-heading: #DFDFDE;
+    --color-heading-black: #EDEDED;
+    --color-accent: #d1dce5;
+    // --image: url("../../images/moon.svg");
+}
+
+/* 4 */
+body.light {
+    --color-primary: ds-color(primary, 400); //#CD104D;
+    --color-text: ds-color(secondary, 400); //#2e353f;
+    --color-text-light: #4f5969;
+    --color-heading: #1a202c;
+    --color-heading-black: black;
+    --color-accent: #d1dce5;
+    --color-background: #FFFFFF;
+    // --image: url("../../images/sun.svg");
+}
+
+body.cocuy {
+    --color-primary: #63533D;
+    --color-secondary: #B1AD95;
+    --color-tertiary: #E1D8C5;
+    --color-quaternary: #A5A2A4;
+    --color-text: #2e353f;
+    --color-text-light: #4f5969;
+    --color-heading: #1a202c;
+    --color-heading-black: black;
+    --color-accent: #d1dce5;
+    --color-background: #FFFFFF;
+    // --image: url("../../images/sun.svg");
+}
+
+body.chicaque {
+    --color-primary: #395717;
+    --color-secondary: #7BAC45;
+    --color-tertiary: #B09E67;
+    --color-quaternary: #7B8383;
+    --color-text: #2e353f;
+    --color-text-light: #4f5969;
+    --color-heading: #1a202c;
+    --color-heading-black: black;
+    --color-accent: #d1dce5;
+    --color-background: #FFFFFF;
+    // --image: url("../../images/sun.svg");
+}
+
+body.chingaza {
+    --color-primary: #6C6855;
+    --color-secondary: #DADCDB;
+    --color-tertiary: #A2A9B7;
+    --color-quaternary: #B8C0BF;
+    --color-text: #2e353f;
+    --color-text-light: #4f5969;
+    --color-heading: #1a202c;
+    --color-heading-black: black;
+    --color-accent: #d1dce5;
+    --color-background: #FFFFFF;
+    // --image: url("../../images/sun.svg");
 }

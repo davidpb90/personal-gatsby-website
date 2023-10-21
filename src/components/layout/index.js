@@ -1,50 +1,23 @@
-import React, { useState } from 'react';
-import { Link, useStaticQuery, graphql } from 'gatsby'
-import Menu from '../menu'
+import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby'
+
 import Footer from '../footer'
 // import ModeToggle from '../mode-toggle'
-import Burger from '../burger'
 import Header from "../header"
 // import { cold } from 'react-hot-loader';
 // cold(Header);
 import {
-    bigContainer,
     bigContainer__row,
     headerContainer__row,
     headerContainer__col12,
     bigContainerFluid,
-    bigContainer__col12,
     bigContainer__col11,
-    bigContainer__col1,
-    bigContainer__col10,
-    bigContainer__col2,
-    bigContainer__colSm4,
     bigContainer__colSm8,
-    bigContainer__colMd2,
     bigContainer__colMd10,
-    bigContainer__colLg2,
     bigContainer__colLg10,
-    container,
     container__row,
     heading,
-    container__col12,
-    container__col11,
-    container__col1,
-    container__col10,
-    container__col2,
-    hiddenSmDown,
-    hiddenMdDown,
-    navLinks,
-    navLinkItem,
-    navLinkText,
-    siteTitle,
-    wrapper,
-    mainContainer,
-    main,
-    rightNavbar,
-    brand,
-    navbar,
-    footer
+    container__col12
 } //from '../../scss/main.scss'
 from '../../scss/5-components/layout.module.scss'
 
@@ -59,16 +32,17 @@ const Layout = ({ pageTitle, children }) => {
             }
         }
     `)
-    const [open, setOpen] = useState(false);
+    // const [open, setOpen] = useState(false);
     return (
-        <div style={{
-            backgroundColor: 'var(--bg)',
-            color: 'var(--textNormal)',
-            transition: 'color 0.2s ease-out, background 0.2s ease-out',
-            height: `100%`,
-            display: `flex`,
-            flexDirection: `column`,
-        }} className={bigContainerFluid}>
+        // <div style={{
+        //     backgroundColor: 'var(--bg)',
+        //     color: 'var(--textNormal)',
+        //     transition: 'color 0.2s ease-out, background 0.2s ease-out',
+        //     height: `100%`,
+        //     display: `flex`,
+        //     flexDirection: `column`,
+        // }}></div>
+        <div className={bigContainerFluid}>
             {/* <Burger open={open} setOpen={setOpen} /> */}
             {/* <Menu open={open} setOpen={setOpen} /> */}
             <div className={headerContainer__row}>
