@@ -78,7 +78,15 @@
 //     background: rgba(0, 0, 0, 0.3);
 // }
 
-@use '../../scss/main';
+// @use '../../scss/main';
+
+// abstracts
+@use '../1-abstracts/abstracts-dir' as variables;
+// themes
+@use '../2-themes/themes-dir';
+// base
+@use '../3-base/base-dir';
+@use '../4-layout/layout-dir' as layout;
 
 $ds-primary-text-color: ds-color(primary, 400);
 $ds-secondary-text-color: ds-color(neutral, 400);
@@ -161,12 +169,14 @@ a {
 }
 
 .close-button {
-    position: sticky;
+    position: relative;
     height: 32px;
     width: 32px;
     // background-image: url('../images/menuClose.png');
-    background-color: initial;
-    z-index: 97;
+    background-color: $ds-primary-text-color; //initial;
+    background: #eee;
+    color: #263249;
+    z-index: 105;
 }
 
 .side-menu .close-button {
@@ -190,19 +200,19 @@ a {
     position: absolute;
         /* <-- added declarations */
     left: 0;
-    top: 100%;
+    top: 5%;
         /*     here               */
-    width: 100%;
+    width: 50%;
         /*     and here...        */
     flex-direction: column;
     justify-content: space-between;
     transform: translate3d(-280px, 0px, 0px);
     // position: absolute;
-    width: 280px;
-    background: #263249;
+    //width: 280px;
+    // background: #263249;
     color: #eee;
     left: 0;
-    height: 1000%;
+    height: 40%;
     transition: all .3s;
     // width: 33.33%;
     float: left;
