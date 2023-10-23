@@ -174,7 +174,7 @@ a {
     width: 32px;
     // background-image: url('../images/menuClose.png');
     background-color: $ds-primary-text-color; //initial;
-    background: #eee;
+    background: $ds-primary-text-color;
     color: #263249;
     z-index: 105;
 }
@@ -210,7 +210,7 @@ a {
     // position: absolute;
     //width: 280px;
     // background: #263249;
-    color: #eee;
+    color: $ds-secondary-text-color;
     left: 0;
     height: 40%;
     transition: all .3s;
@@ -266,6 +266,7 @@ a {
 }
 
 .nav-link-items {
+    border-top: rebeccapurple thin solid;
     position: sticky;
     list-style: none;
     padding: 10px;
