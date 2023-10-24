@@ -2,69 +2,69 @@
 @use '../utility-functions/functions-base' as functions;
 @use '../utility-mixins/mixins-base' as mixins;
 
-:root {
-  font-family: themes.$ds-theme-font-family;
-  font-size: themes.$ds-theme-base-font-size;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  --color-primary: #CD104D;
-  --color-text: #2e353f;
-  --color-text-light: #4f5969;
-  --color-heading: #1a202c;
-  --color-heading-black: #000000;
-  --color-accent: #d1dce5;
-  --color-background: #FFFFFF;
-  --dark-mode: #000;
-  --dark-mode-hf: #CD104D;
-}
-
-// body {
-//     margin: 0;
-//     padding: 0;
+// :root {
+//   font-family: themes.$ds-theme-font-family;
+//   font-size: themes.$ds-theme-base-font-size;
+//   -moz-osx-font-smoothing: grayscale;
+//   -webkit-font-smoothing: antialiased;
+//   --color-primary: #CD104D;
+//   --color-text: #2e353f;
+//   --color-text-light: #4f5969;
+//   --color-heading: #1a202c;
+//   --color-heading-black: #000000;
+//   --color-accent: #d1dce5;
+//   --color-background: #FFFFFF;
+//   --dark-mode: #000;
+//   --dark-mode-hf: #CD104D;
 // }
 
-/////////////////////////////////////////////////////////////////////////////
-/// Utility Classes
-///////////////////////////////////////////////////////////////////////////// 
+// // body {
+// //     margin: 0;
+// //     padding: 0;
+// // }
 
-$app-background-color:    black;
-$ds-base-text-color:      functions.ds-color(neutral, 400);
-$ds-brand-text-color:     functions.ds-color(primary, 400);
-$ds-secondary-text-color: functions.ds-color(neutral, 400);
-$ds-base-link-text-color: $ds-brand-text-color;
+// /////////////////////////////////////////////////////////////////////////////
+// /// Utility Classes
+// ///////////////////////////////////////////////////////////////////////////// 
+
+// $app-background-color:    black;
+// $ds-base-text-color:      functions.ds-color(neutral, 400);
+// $ds-brand-text-color:     functions.ds-color(primary, 400);
+// $ds-secondary-text-color: functions.ds-color(neutral, 400);
+// $ds-base-link-text-color: $ds-brand-text-color;
 
 
 
-body {
-  color: var(--color-text);
-  background-color: var(--color-background);
-  margin: 0;
-  padding: 0;
-}
+// body {
+//   color: var(--color-text);
+//   background-color: var(--color-background);
+//   margin: 0;
+//   padding: 0;
+// }
 
-/* 3 */
-body.dark {
-  --color-background: #{$app-background-color}; //#171717;
-  --color-primary: #{$ds-secondary-text-color}; //#CD104D;
-  --color-text: #{$ds-base-text-color};
-  --color-text-light: #4f5969;
-  --color-heading: #DFDFDE;
-  --color-heading-black: #EDEDED;
-  --color-accent: #d1dce5;
-  // --image: url("../../images/moon.svg");
-}
+// /* 3 */
+// body.dark {
+//   --color-background: #{$app-background-color}; //#171717;
+//   --color-primary: #{$ds-secondary-text-color}; //#CD104D;
+//   --color-text: #{$ds-base-text-color};
+//   --color-text-light: #4f5969;
+//   --color-heading: #DFDFDE;
+//   --color-heading-black: #EDEDED;
+//   --color-accent: #d1dce5;
+//   // --image: url("../../images/moon.svg");
+// }
 
-/* 4 */
-body.light {
-  --color-primary: #{$ds-brand-text-color}; //#CD104D;
-  --color-text: #{$ds-secondary-text-color}; //#2e353f;
-  --color-text-light: #4f5969;
-  --color-heading: #1a202c;
-  --color-heading-black: black;
-  --color-accent: #d1dce5;
-  --color-background: #FFFFFF;
-  // --image: url("../../images/sun.svg");
-}
+// /* 4 */
+// body.light {
+//   --color-primary: #{$ds-brand-text-color}; //#CD104D;
+//   --color-text: #{$ds-secondary-text-color}; //#2e353f;
+//   --color-text-light: #4f5969;
+//   --color-heading: #1a202c;
+//   --color-heading-black: black;
+//   --color-accent: #d1dce5;
+//   --color-background: #FFFFFF;
+//   // --image: url("../../images/sun.svg");
+// }
 
 // html {
 //   background-color: $app-background-color;
