@@ -2,7 +2,7 @@ import * as React from 'react'
 import { Link } from 'gatsby'
 import {
    
-    navLinks,
+    navLink,
     navLinkItem,
     a,
     menuButton,
@@ -25,7 +25,7 @@ const Menu = ({ isActive, toggleAction, }) => {
             <div className={menuButton + ' ' + closeButton} onClick={() => { toggleAction(false) }} />
 	    		  	
                        
-                        <ul className={navLinks}>
+                        <ul className={navLink}>
 	    		    		<li className={navLinkItem}> 
                             <Link to="/" className={a}>
                                     Home
