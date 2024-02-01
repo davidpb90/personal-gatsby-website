@@ -186,11 +186,12 @@ a {
 
 .side-menu.active {
     display: flex;
+    position: relative;
 }
 
 .side-menu {
     display: none;
-    position: relative;
+    position: absolute;
     // position: absolute;
     // top: 0;
     // right: 0;
@@ -245,7 +246,7 @@ a {
 // }
 
 .nav-link {
-    position: absolute;
+    position: relative;
     margin: 10px 0;
     border-top: rebeccapurple thin solid;
     margin-top: 5px;
