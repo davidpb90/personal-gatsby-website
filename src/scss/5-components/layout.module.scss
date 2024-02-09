@@ -342,7 +342,7 @@ td {
 .container {
     max-width: variables.$grid__bp-xl * 1px;
     margin: 0 auto;
-    height: 80%;
+    height: 10%;
 
     &--fluid {
         margin: 0;
@@ -369,7 +369,7 @@ td {
     box-sizing: border-box;
 
     &__row {
-        min-height: 4%;
+        min-height: 10%;
         // background-color: #ffeead;
 
         &.nested {
@@ -397,8 +397,8 @@ td {
     max-width: variables.$grid__bp-xl * 1px;
     //max-width: 100%;
     margin: 0 auto;
-    min-height: 90%;
-    height: 90%;
+    min-height: 70%;
+    height: 70%;
 
     &--fluid {
         margin: 0;
@@ -412,7 +412,7 @@ td {
         justify-content: space-around;
         // flex-wrap: wrap;
         width: 80%;
-        min-height: 90%;
+        min-height: 70%;
     }
 
     @each $modifier ,
