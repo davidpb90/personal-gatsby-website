@@ -116,7 +116,7 @@ nav {
 a {
     font-size: 1rem;
     text-transform: uppercase;
-    padding: 2rem 0;
+    padding: 0.2rem 0;
     font-weight: bold;
     letter-spacing: 0.5rem;
     color: $ds-primary-text-color;
@@ -271,7 +271,7 @@ a {
     position: sticky;
     list-style: none;
     padding: 10px;
-    width: 0%;
+    width: 30%;
     z-index: 102;
     font-size: 1rem;
 }
