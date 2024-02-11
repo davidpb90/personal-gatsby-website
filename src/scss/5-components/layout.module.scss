@@ -20,6 +20,12 @@ $primary-color: #333;
 
 .heading {
     color: rebeccapurple;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 80%;
+    min-height: 100%;
+
 }
 
 .nav-links {
