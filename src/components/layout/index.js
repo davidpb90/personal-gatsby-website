@@ -11,6 +11,7 @@ import {
     headerContainer__row,
     headerContainer__col12,
     bigContainerFluid,
+    bigContainer__col1,
     bigContainer__col11,
     bigContainer__colSm8,
     bigContainer__colMd10,
@@ -47,15 +48,17 @@ const Layout = ({ pageTitle, children }) => {
             {/* <Menu open={open} setOpen={setOpen} /> */}
             <div className={headerContainer__row}>
                 <div className={headerContainer__col12}>
-                    <Header siteTitle={data.site.siteMetadata.title} />
+                    <Header siteTitle={data.site.siteMetadata.title}/>
                 </div>
             </div>
 	  		<div className={bigContainer__row}>
                 {/* <div className={bigContainer__col1 + ' ' + hiddenSmDown + ' ' + bigContainer__colLg2 + ' ' + bigContainer__colMd2 + ' ' + bigContainer__colSm4}>     */}
                 
                 {/* </div> */}
-                <main className={bigContainer__col11 + ' ' + bigContainer__colLg10 + ' ' + bigContainer__colMd10 + ' ' + bigContainer__colSm8}>
+                <div className={bigContainer__col1}>
                     <h1 className={heading}>{pageTitle}</h1>
+                </div>
+                <main className={bigContainer__col11 + ' ' + bigContainer__colLg10 + ' ' + bigContainer__colMd10 + ' ' + bigContainer__colSm8}>
                     {children}
 	    			{/* <h1 className={text}-left py-1 px-2 mx-2">David Pardo Bernal</h1> */}
 	    			{/* <p className={lead} py-1 px-2 mx-2">A personal and professional repository.</p> */}

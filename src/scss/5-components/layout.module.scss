@@ -21,10 +21,11 @@ $primary-color: #333;
 .heading {
     color: rebeccapurple;
     display: flex;
-    align-items: center;
+    flex-flow: column nowrap;
+    align-items: flex-start;
     justify-content: space-around;
-    min-width: 80%;
-    min-height: 100%;
+    min-width: 5%;
+    min-height: 3%;
 
 }
 
@@ -452,7 +453,7 @@ td {
             // background-color: #ff6f69;
             // outline: 1px solid #ffcc5c;
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             justify-content: space-between;
         }
     }
