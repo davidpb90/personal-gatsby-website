@@ -43,7 +43,8 @@ class Header extends React.Component {
 
                             </ModeToggle>
                         </div>
-                            {/* <Link to="/">{this.props.siteTitle}</Link> */}
+                            {/* to fix */}
+                            {<a to="/">{this.props.pageTitle}</a>} 
                         
                         
                     </div>
