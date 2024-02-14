@@ -417,8 +417,8 @@ td {
     &__row {
         display: flex;
         justify-content: space-around;
-        // flex-wrap: wrap;
-        width: 80%;
+        flex-wrap: wrap;
+        width: 100%;
         min-height: 70%;
     }
 
@@ -454,7 +454,7 @@ td {
             // outline: 1px solid #ffcc5c;
             display: flex;
             align-items: flex-start;
-            justify-content: space-between;
+            justify-content: space-evenly;
         }
     }
 }
