@@ -44,7 +44,7 @@ class Header extends React.Component {
                             </ModeToggle>
                         </div>
                             {/* to fix */}
-                            {<a to="/">{this.props.pageTitle}</a>} 
+                            {/* {<a to="/">{this.props.pageTitle}</a>}  */}
                         
                         
                     </div>
