@@ -12,11 +12,12 @@ $ds-secondary-text-color: base.ds-color(neutral, 400);
 .header {
     position: relative;
     background: #{$ds-primary-text-color}; //$ds-primary-text-color;
-    margin-bottom: 1.45rem;
+    margin-bottom: 1px;
     display: flex !important;
     flex-direction: row;
     justify-content: space-between;
     min-width: 100%;
+    height: 100%;
     
 }
 
@@ -24,9 +25,9 @@ $ds-secondary-text-color: base.ds-color(neutral, 400);
     position: relative;
     margin: 0 auto;
     max-width: 960px;
-    padding: 1.45rem 5px;
+    padding: 1.45rem 1px;
     min-width: 95%;
-    min-height: 20px;
+    min-height: 10px;
     display: flex !important;
     flex-direction: row;
     justify-content: space-between;
@@ -34,7 +35,7 @@ $ds-secondary-text-color: base.ds-color(neutral, 400);
 
 .headbar h1 {
     margin: 0;
-    min-height: 100%;
+    min-height: 30%;
 }
 
 .headbar a {
