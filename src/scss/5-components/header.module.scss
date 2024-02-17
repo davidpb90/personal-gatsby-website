@@ -35,7 +35,7 @@ $ds-secondary-text-color: base.ds-color(neutral, 400);
 
 .headbar h1 {
     margin: 0;
-    min-height: 30%;
+    min-height: 20%;
 }
 
 .headbar a {
@@ -47,11 +47,16 @@ $ds-secondary-text-color: base.ds-color(neutral, 400);
     order: 1;
 }
 .brand {
-    //         flex: 0 0 80%;
+    // flex: 0 0 80%;
     order: 2;
-    //         align-content: flex-start;
-    //         align-self: flex-start;
+    align-content: flex-start;
+    // align-self: flex-start;
+    padding: 1px;
+    margin: 0;
+    vertical-align: top;
+    height: 30%;
     //         text-align: left !important;
+
 }
 .dark-mode-toggle {
     order: 3;
