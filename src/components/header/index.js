@@ -33,7 +33,7 @@ class Header extends React.Component {
             <>
                 <Menu isActive={this.state.menuShow} toggleAction={this.toggleMenu} />
                 <header className={header}>
-                    <div className={headbar}>
+                    {/* <div className={headbar}> */}
                         <div className={menuTogglewrap}>
                             <div className={menuButton + ' ' + mainButton} onClick={() => { this.toggleMenu() }} />
                         </div>
@@ -47,7 +47,7 @@ class Header extends React.Component {
                             {/* {<a to="/">{this.props.pageTitle}</a>}  */}
                         
                         
-                    </div>
+                    {/* </div> */}
                     
                 </header>
                 

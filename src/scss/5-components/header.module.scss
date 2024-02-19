@@ -18,6 +18,8 @@ $ds-secondary-text-color: base.ds-color(neutral, 400);
     justify-content: space-between;
     min-width: 100%;
     height: 100%;
+    align-items:center;
+    vertical-align: center;
     
 }
 
@@ -31,6 +33,8 @@ $ds-secondary-text-color: base.ds-color(neutral, 400);
     display: flex !important;
     flex-direction: row;
     justify-content: space-between;
+    align-items:center;
+    vertical-align: center;
 }
 
 .headbar h1 {
@@ -45,21 +49,30 @@ $ds-secondary-text-color: base.ds-color(neutral, 400);
 
 .menu-togglewrap {
     order: 1;
+    vertical-align: center;
+    text-align: center;
+    align-content: center;
+    display: flex !important;
 }
 .brand {
     // flex: 0 0 80%;
     order: 2;
-    align-content: flex-start;
-    // align-self: flex-start;
-    padding: 1px;
-    margin: 0;
-    vertical-align: top;
-    height: 20%;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
+    // padding: 1px;
+    display: inline-block;
+    vertical-align: middle;
+    height: 50%;
+    width: 10%;
+    margin: auto;
+    text-align: center;
     //         text-align: left !important;
 
 }
 .dark-mode-toggle {
     order: 3;
+    // margin: 0 auto;
 }
 
 
@@ -67,23 +80,32 @@ $ds-secondary-text-color: base.ds-color(neutral, 400);
     cursor: pointer;
     background-color: #EEE;
     text-align: center;
-    line-height: 2em;
+    // line-height: 2em;
     padding: 0;
     background-origin: border-box;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    height: 25px;
+    width: 25px;
+    vertical-align: center;
+    align-content: center;
+    margin: auto;
 }
 
 .main-button {
     height: 25px;
     width: 25px;
+    vertical-align: center;
+    align-content: center;
+    margin: auto;
     // background-image: url('../images/menuIcon.png');
 }
 
 .close-button {
     height: 25px;
     width: 25px;
+    vertical-align: center;
     // background-image: url('../images/menuClose.png');
     background-color: initial;
 }
@@ -120,7 +142,7 @@ $ds-secondary-text-color: base.ds-color(neutral, 400);
 
 .side-menu ul {
     margin: 5px 0;
-    border-top: rebeccapurple thin solid;
+    // border-top: rebeccapurple thin solid;
     position: absolute;
     z-index: 101;
 }
