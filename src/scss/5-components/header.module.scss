@@ -35,6 +35,7 @@ $ds-secondary-text-color: base.ds-color(neutral, 400);
     justify-content: space-between;
     align-items:center;
     vertical-align: center;
+    background: #C0C0C0;
 }
 
 .headbar h1 {
@@ -53,6 +54,7 @@ $ds-secondary-text-color: base.ds-color(neutral, 400);
     text-align: center;
     align-content: center;
     display: flex !important;
+    background: #808080;
 }
 .brand {
     // flex: 0 0 80%;
@@ -68,11 +70,13 @@ $ds-secondary-text-color: base.ds-color(neutral, 400);
     margin: auto;
     text-align: center;
     //         text-align: left !important;
+    background: #800000;
 
 }
 .dark-mode-toggle {
     order: 3;
-    // margin: 0 auto;
+    background: #FF0000;
+    padding: 0.5%;
 }
 
 
@@ -90,7 +94,8 @@ $ds-secondary-text-color: base.ds-color(neutral, 400);
     width: 25px;
     vertical-align: center;
     align-content: center;
-    margin: auto;
+    margin: 0.5% auto;
+    background: #800080;
 }
 
 .main-button {
@@ -98,7 +103,9 @@ $ds-secondary-text-color: base.ds-color(neutral, 400);
     width: 25px;
     vertical-align: center;
     align-content: center;
-    margin: auto;
+    margin: 0.5% auto;
+    background: #FF00FF;
+    padding: 0.5%;
     // background-image: url('../images/menuIcon.png');
 }
 
@@ -107,16 +114,19 @@ $ds-secondary-text-color: base.ds-color(neutral, 400);
     width: 25px;
     vertical-align: center;
     // background-image: url('../images/menuClose.png');
-    background-color: initial;
+    // background-color: initial;
+    background: #008000;
 }
 
 .side-menu .close-button {
     margin-left: auto;
     padding-bottom: 1px;
+    background: #00FF00;
 }
 
 .side-menu.active {
     display: flex;
+    background: #808000;
 }
 
 .side-menu {
@@ -138,6 +148,7 @@ $ds-secondary-text-color: base.ds-color(neutral, 400);
     height: 100%;
     transition: all .3s;
     z-index: 100;
+    background: #FFFF00;
 }
 
 .side-menu ul {
@@ -145,6 +156,7 @@ $ds-secondary-text-color: base.ds-color(neutral, 400);
     // border-top: rebeccapurple thin solid;
     position: absolute;
     z-index: 101;
+    background: #000080;
 }
 
 .side-menu li {
@@ -153,4 +165,5 @@ $ds-secondary-text-color: base.ds-color(neutral, 400);
     width: 0%;
     position: absolute;
     z-index: 102;
+    background: #0000FF;
 }

@@ -371,16 +371,16 @@ td {
 
 //Styling of grid for demostration purposes
 .container {
-    // background-color: #88d8b0;
+    background-color: #7fffd4;
     padding: 10px;
     box-sizing: border-box;
 
     &__row {
         min-height: 10%;
-        // background-color: #ffeead;
+        background-color: 	#f0ffff;
 
         &.nested {
-            // background-color: #ffcc5c;
+            background-color: #f5f5dc;
         }
     }
 
@@ -391,7 +391,7 @@ td {
             }
 
             min-height: 7%;
-            // background-color: #ff6f69;
+            background-color: #ffe4c4;
             // outline: 1px solid #ffcc5c;
             display: flex;
             align-items: center;
@@ -436,10 +436,10 @@ td {
 
     &__row {
         // min-height: 500px;
-        // background-color: #ffeead;
+        background-color: #ffeead;
 
         &.nested {
-            // background-color: #ffcc5c;
+            background-color: #ffcc5c;
         }
     }
 
@@ -450,7 +450,7 @@ td {
             }
 
             min-height: 30px;
-            // background-color: #ff6f69;
+            background-color: #ff6f69;
             // outline: 1px solid #ffcc5c;
             display: flex;
             align-items: flex-start;
@@ -495,10 +495,10 @@ td {
 
     &__row {
         // min-height: 500px;
-        // background-color: #ffeead;
+        background-color: #00FFFF;
 
         &.nested {
-            // background-color: #ffcc5c;
+            background-color: #f0f8ff;
         }
     }
 
@@ -511,7 +511,7 @@ td {
 
             // min-height: 5%;
             height: 100%;
-            // background-color: #ff6f69;
+            background-color: #faebd7;
             // outline: 1px solid #ffcc5c;
             display: flex;
             align-items: center;
