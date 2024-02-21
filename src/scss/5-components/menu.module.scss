@@ -149,11 +149,11 @@ a {
 .menu-button {
     position: sticky;
     cursor: pointer;
-    background-color: #EEE;
+    // background-color: #EEE;
     text-align: center;
-    line-height: 2em;
+    // line-height: 2em;
     padding: 0;
-    background-origin: border-box;
+    // background-origin: border-box;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -173,9 +173,10 @@ a {
     height: 32px;
     width: 32px;
     // background-image: url('../images/menuClose.png');
-    background-color: $ds-primary-text-color; //initial;
-    background: $ds-primary-text-color;
+    // background-color: $ds-primary-text-color; //initial;
+    // background: $ds-primary-text-color;
     color: #263249;
+    // background-color: #EEE;
     z-index: 105;
 }
 
@@ -210,8 +211,8 @@ a {
     transform: translate3d(0px, 0px, 0px);
     // position: absolute;
     //width: 280px;
-    // background: #263249;
-    color: $ds-secondary-text-color;
+    background: #263249;
+    // color: $ds-secondary-text-color;
     left: 0;
     height: 0;
     transition: all .3s;
@@ -248,7 +249,7 @@ a {
 .nav-link {
     position: relative;
     margin: 2px 0;
-    border-top: rebeccapurple thin solid;
+    // border-top: rebeccapurple thin solid;
     margin-top: 5px;
     list-style-type: none;
     height: 100%;

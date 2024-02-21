@@ -85,8 +85,8 @@ $ds-secondary-text-color: base.ds-color(neutral, 400);
     background-color: #EEE;
     text-align: center;
     // line-height: 2em;
-    padding: 0;
-    background-origin: border-box;
+    padding: 10px;
+    // background-origin: border-box;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -94,7 +94,7 @@ $ds-secondary-text-color: base.ds-color(neutral, 400);
     width: 25px;
     vertical-align: center;
     align-content: center;
-    margin: 0.5% auto;
+    margin: auto;
     background: #800080;
 }
 
@@ -103,9 +103,9 @@ $ds-secondary-text-color: base.ds-color(neutral, 400);
     width: 25px;
     vertical-align: center;
     align-content: center;
-    margin: 0.5% auto;
+    margin: auto 5px;
     background: #FF00FF;
-    padding: 0.5%;
+    padding: 0;
     // background-image: url('../images/menuIcon.png');
 }
 
@@ -142,8 +142,8 @@ $ds-secondary-text-color: base.ds-color(neutral, 400);
     transform: translate3d(-280px, 0px, 0px);
     position: absolute;
     width: 280px;
-    background: #263249;
-    color: #eee;
+    // background: #263249;
+    color: #263249; // #eee;
     left: 0;
     height: 100%;
     transition: all .3s;
