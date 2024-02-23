@@ -349,7 +349,7 @@ td {
 .container {
     max-width: variables.$grid__bp-xl * 1px;
     margin: 0 auto;
-    height: 10%;
+    height: 5%;
 
     &--fluid {
         margin: 0;
@@ -372,11 +372,11 @@ td {
 //Styling of grid for demostration purposes
 .container {
     background-color: #7fffd4;
-    padding: 10px;
+    // padding: 10px;
     box-sizing: border-box;
 
     &__row {
-        min-height: 10%;
+        // min-height: 10%;
         background-color: 	#f0ffff;
 
         &.nested {
@@ -387,10 +387,10 @@ td {
     @at-root {
         [class*='container__col-'] {
             &.higher {
-                min-height: 60px;
+                // min-height: 60px;
             }
 
-            min-height: 7%;
+            // min-height: 7%;
             background-color: #ffe4c4;
             // outline: 1px solid #ffcc5c;
             display: flex;
@@ -419,7 +419,7 @@ td {
         justify-content: space-around;
         flex-wrap: wrap;
         width: 100%;
-        min-height: 80%;
+        min-height: 90%;
     }
 
     @each $modifier ,

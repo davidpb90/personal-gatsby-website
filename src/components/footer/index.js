@@ -20,9 +20,9 @@ const Footer = ({ pageTitle, children }) => {
     return (
         
                 <footer className={footer}>
-                    <Link to="/contact" className={navLinkText}>
+                    {/* <Link to="/contact" className={navLinkText}>
                     Contact Me
-                    </Link>
+                    </Link> */}
                     <p className={p}>Designed and built by David Pardo Bernal</p>
                 </footer>
     )
