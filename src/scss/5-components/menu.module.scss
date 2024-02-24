@@ -183,6 +183,7 @@ a {
 .side-menu .close-button {
     margin-left: auto;
     padding-bottom: 2px;
+    padding-top: 5px;
 }
 
 .side-menu.active {
@@ -202,7 +203,7 @@ a {
     //position: absolute;
         /* <-- added declarations */
     left: 0;
-    top: 10%;
+    top: 20%;
         /*     here               */
     width: 0%; //15%;
         /*     and here...        */
