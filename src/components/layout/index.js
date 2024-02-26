@@ -7,18 +7,18 @@ import Header from "../header"
 // import { cold } from 'react-hot-loader';
 // cold(Header);
 import {
-    bigContainer__row,
+    centralContainer__row,
     headerContainer__row,
     headerContainer__col12,
-    bigContainerFluid,
-    bigContainer__col1,
-    bigContainer__col11,
-    bigContainer__colSm8,
-    bigContainer__colMd10,
-    bigContainer__colLg10,
-    container__row,
+    generalContainerFluid,
+    centralContainer__col1,
+    centralContainer__col11,
+    centralContainer__colSm8,
+    centralContainer__colMd10,
+    centralContainer__colLg10,
+    footerContainer__row,
     heading,
-    container__col12
+    footerContainer__col12
 } //from '../../scss/main.scss'
 from '../../scss/5-components/layout.module.scss'
 
@@ -43,7 +43,7 @@ const Layout = ({ pageTitle, children }) => {
         //     display: `flex`,
         //     flexDirection: `column`,
         // }}></div>
-        <div className={bigContainerFluid}>
+        <div className={generalContainerFluid}>
             {/* <Burger open={open} setOpen={setOpen} /> */}
             {/* <Menu open={open} setOpen={setOpen} /> */}
             <div className={headerContainer__row}>
@@ -51,14 +51,14 @@ const Layout = ({ pageTitle, children }) => {
                     <Header siteTitle={data.site.siteMetadata.title}/>
                 </div>
             </div>
-	  		<div className={bigContainer__row}>
+	  		<div className={centralContainer__row}>
                 {/* <div className={bigContainer__col1 + ' ' + hiddenSmDown + ' ' + bigContainer__colLg2 + ' ' + bigContainer__colMd2 + ' ' + bigContainer__colSm4}>     */}
                 
                 {/* </div> */}
-                <div className={bigContainer__col1}>
+                <div className={centralContainer__col1}>
                     <h1 className={heading}>{pageTitle}</h1>
                 </div>
-                <main className={bigContainer__col11 + ' ' + bigContainer__colLg10 + ' ' + bigContainer__colMd10 + ' ' + bigContainer__colSm8}>
+                <main className={centralContainer__col11 + ' ' + centralContainer__colLg10 + ' ' + centralContainer__colMd10 + ' ' + centralContainer__colSm8}>
                     {children}
 	    			{/* <h1 className={text}-left py-1 px-2 mx-2">David Pardo Bernal</h1> */}
 	    			{/* <p className={lead} py-1 px-2 mx-2">A personal and professional repository.</p> */}
@@ -68,8 +68,8 @@ const Layout = ({ pageTitle, children }) => {
 	    		</main>
 	    		
 	  		</div>
-            <div className={container__row}>
-                <div className={container__col12}>   
+            <div className={footerContainer__row}>
+                <div className={footerContainer__col12}>   
                     <Footer>
                     </Footer>
                 </div>
