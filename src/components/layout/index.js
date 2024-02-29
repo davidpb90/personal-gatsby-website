@@ -12,7 +12,7 @@ import {
     headerContainer__col12,
     generalContainerFluid,
     centralContainer__col1,
-    centralContainer__col11,
+    centralContainer__col10,
     centralContainer__colSm8,
     centralContainer__colMd10,
     centralContainer__colLg10,
@@ -56,9 +56,9 @@ const Layout = ({ pageTitle, children }) => {
                 
                 {/* </div> */}
                 <div className={centralContainer__col1}>
-                    <h1 className={heading}>{pageTitle}</h1>
                 </div>
-                <main className={centralContainer__col11 + ' ' + centralContainer__colLg10 + ' ' + centralContainer__colMd10 + ' ' + centralContainer__colSm8}>
+                <main className={centralContainer__col10 + ' ' + centralContainer__colLg10 + ' ' + centralContainer__colMd10 + ' ' + centralContainer__colSm8}>
+                    <h1 className={heading}>{pageTitle}</h1>
                     {children}
 	    			{/* <h1 className={text}-left py-1 px-2 mx-2">David Pardo Bernal</h1> */}
 	    			{/* <p className={lead} py-1 px-2 mx-2">A personal and professional repository.</p> */}
@@ -66,7 +66,8 @@ const Layout = ({ pageTitle, children }) => {
 	    			{/* </p> */}
 	    		    {/* <script src="js/p5-sketches.js"></script> */}
 	    		</main>
-	    		
+                <div className={centralContainer__col1}>
+                </div>
 	  		</div>
             <div className={footerContainer__row}>
                 <div className={footerContainer__col12}>   

@@ -119,21 +119,23 @@ $ds-secondary-text-color: base.ds-color(neutral, 400);
 }
 
 .side-menu .close-button {
+    position: absolute;
     margin-left: auto;
     padding-bottom: 1px;
     background: #00FF00;
 }
 
-.side-menu.active {
+.side-menu .active {
     display: flex;
     background: #808000;
+    position: absolute;
 }
 
 .side-menu {
     display: none;
-    // position: absolute;
-    // top: 0;
-    // right: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
     // background: white;
     // padding: 10px 20px;
     // border: 2px solid #baa4d0;
@@ -142,7 +144,7 @@ $ds-secondary-text-color: base.ds-color(neutral, 400);
     transform: translate3d(-280px, 0px, 0px);
     position: absolute;
     width: 280px;
-    // background: #263249;
+    background: #263249;
     color: #263249; // #eee;
     left: 0;
     height: 100%;
