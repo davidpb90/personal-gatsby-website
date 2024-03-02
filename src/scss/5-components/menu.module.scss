@@ -169,26 +169,25 @@ a {
 }
 
 .close-button {
-    position: relative;
-    height: 32px;
-    width: 32px;
+    height: 25px;
+    width: 25px;
+    vertical-align: center;
     // background-image: url('../images/menuClose.png');
-    // background-color: $ds-primary-text-color; //initial;
-    // background: $ds-primary-text-color;
-    color: #263249;
-    // background-color: #EEE;
-    z-index: 105;
+    // background-color: initial;
+    background: #008000;
 }
 
 .side-menu .close-button {
+    position: absolute;
     margin-left: auto;
-    padding-bottom: 2px;
-    padding-top: 5px;
+    padding-bottom: 1px;
+    background: #00FF00;
 }
 
 .side-menu.active {
     display: flex;
-    position: relative;
+    background: #808000;
+    position: absolute;
 }
 
 .side-menu {
