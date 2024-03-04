@@ -4,7 +4,6 @@ import ModeToggle from '../mode-toggle';
 import Menu from "../menu"
 
 import {
-    headbar,
     menuTogglewrap,
     menuButton,
     mainButton,
@@ -28,6 +27,16 @@ class Header extends React.Component {
         this.setState({ "menuShow": menuState })
     }
 
+    handleClick = () => {
+        this.toggleMenu()
+    }
+    handleKeyDown = (ev) => {
+        // check keys if you want
+        if (ev.keyCode === 13) {
+          this.toggleMenu()
+        }
+     }
+
     render() {
         return (
             <>
@@ -35,7 +44,7 @@ class Header extends React.Component {
                 <header className={header}>
                     {/* <div className={headbar}> */}
                         <div className={menuTogglewrap}>
-                            <div className={menuButton + ' ' + mainButton} onClick={() => { this.toggleMenu() }} />
+                            <div className={menuButton + ' ' + mainButton} onClick={this.handleClick} onKeyDown={this.handleKeyDown} />
                         </div>
                         <h3 className={brand}>DPB</h3>
                         <div className={darkModeToggle}>

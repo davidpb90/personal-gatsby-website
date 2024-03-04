@@ -113,7 +113,7 @@ nav {
 //     width: 100%;
 }
 
-a {
+.a-menu {
     font-size: 1rem;
     text-transform: uppercase;
     padding: 0.2rem 0;
@@ -186,7 +186,7 @@ a {
 
 .side-menu.active {
     display: flex;
-    background: #808000;
+    background-color: #808000 !important;;
     position: absolute;
 }
 
@@ -204,7 +204,7 @@ a {
     left: 0;
     top: 20%;
         /*     here               */
-    width: 0%; //15%;
+    width: 30%; //15%;
         /*     and here...        */
     flex-direction: column;
     justify-content: space-between;
@@ -214,37 +214,38 @@ a {
     background: #263249;
     // color: $ds-secondary-text-color;
     left: 10px;
-    height: 0;
+    height: 30%;
     transition: all .3s;
     // width: 33.33%;
     float: left;
     z-index: 100;
 }
 
-// .side-menu ul {
-//     position: sticky;
-//     margin: 10px 0;
-//     border-top: rebeccapurple thin solid;
-//     margin-top: 5px;
-//     list-style-type: none;
-//     height: 0px;
-//     overflow: hidden;    
-//     /* <-- added declarations */
-//     left: 0;
-//     top: 100%;
-//     /*     here               */
-//     width: 100%;
-//     /*     and here...        */    
-//     transition: height 1s ease;
-//     z-index: 101;
-// }
+.side-menu ul {
+    // position: sticky;
+    margin: 10px 0;
+    // border-top: rebeccapurple thin solid;
+    margin-top: 5px;
+    list-style-type: none;
+    height: 100%;
+    // overflow: hidden;    
+    /* <-- added declarations */
+    left: 0;
+    top: 100%;
+    /*     here               */
+    width: 100%;
+    /*     and here...        */    
+    transition: height 1s ease;
+    z-index: 110;
+    background: #263249;
+}
 
-// .side-menu li {
-//     list-style: none;
-//     padding: 10px;
-//     width: 0%;
-//     z-index: 102;
-// }
+.side-menu li {
+    list-style: none;
+    padding: 10px;
+    width: 0%;
+    z-index: 102;
+}
 
 .nav-link {
     position: relative;
