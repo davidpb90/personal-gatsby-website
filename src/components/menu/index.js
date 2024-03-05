@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import {
     navLink,
     navLinkItem,
-    a,
+    aMenu,
     menuButton,
     closeButton,
     sideMenu,
@@ -26,42 +26,42 @@ const Menu = ({ isActive, toggleAction, }) => {
                        
                         <ul className={navLink}>
 	    		    		<li className={navLinkItem}> 
-                            <Link to="/" className={a}>
+                            <Link to="/" className={aMenu}>
                                     Home
                                 </Link>
                             </li>
                             <li className={navLinkItem}>
-                                <Link to="/about" className={a}>
+                                <Link to="/about" className={aMenu}>
                                     About
                                 </Link>
                             </li>
                             <li className={navLinkItem}>
-                                <Link to="/blog" className={a}>
+                                <Link to="/blog" className={aMenu}>
                                     Blog
                                 </Link>
                             </li>
                             <li className={navLinkItem}>
-                                <Link to="/travels" className={a}>
+                                <Link to="/travels" className={aMenu}>
                                     Travels
                                 </Link>
                             </li>
                             <li className={navLinkItem}>
-                                <Link to="/photography" className={a}>
+                                <Link to="/photography" className={aMenu}>
                                     Photography
                                 </Link>
                             </li>
                             <li className={navLinkItem}>
-                                <Link to="/stories" className={a}>
+                                <Link to="/stories" className={aMenu}>
                                     Stories
                                 </Link>
                             </li>
                             <li className={navLinkItem}>
-                                <Link to="/cv" className={a}>
+                                <Link to="/cv" className={aMenu}>
                                     CV
                                 </Link>
                             </li>
                             <li className={navLinkItem}>
-                                <Link to="/contact" className={a}>
+                                <Link to="/contact" className={aMenu}>
                                     Contact
                                 </Link>
                             </li>
