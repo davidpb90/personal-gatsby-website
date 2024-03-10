@@ -22,11 +22,9 @@ const Menu = ({ isActive, toggleAction, }) => {
         // <nav className={nav} open={open}>
         <div className={getClass()} > 
             <div className={menuButton + ' ' + closeButton} onClick={() => { toggleAction(false) }} />
-	    		  	
-                       
-                        <ul className={navLink}>
+	    		<ul className={navLink}>
 	    		    		<li className={navLinkItem}> 
-                            <Link to="/" className={aMenu}>
+                                <Link to="/" className={aMenu}>
                                     Home
                                 </Link>
                             </li>
@@ -66,11 +64,8 @@ const Menu = ({ isActive, toggleAction, }) => {
                                 </Link>
                             </li>
 	    		    		
-	    		    	</ul>
-	    </div>
-                           
-
-          
+	    		</ul>
+	    </div>                 
     )   
 }
 // Menu.propTypes = {
