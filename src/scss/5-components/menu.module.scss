@@ -185,40 +185,56 @@ nav {
 }
 
 .side-menu.active {
-    display: flex;
-    background-color: #808000 !important;;
-    position: absolute;
+    // display: flex;
+    // background-color: #808000 !important;;
+    // position: absolute;
+    width: 100%;
+    transform: translateX(0px);
 }
 
 .side-menu {
-    display: none;
-    position: relative;
+    // display: none;
     // position: absolute;
-    // top: 0;
-    // right: 0;
-    // background: white;
-    // padding: 10px 20px;
-    // border: 2px solid #baa4d0;
-    //position: absolute;
-        /* <-- added declarations */
+    // // position: absolute;
+    // // top: 0;
+    // // right: 0;
+    // // background: white;
+    // // padding: 10px 20px;
+    // // border: 2px solid #baa4d0;
+    // //position: absolute;
+    //     /* <-- added declarations */
+    // left: 0;
+    // top: 20%;
+    //     /*     here               */
+    // width: 30%; //15%;
+    //     /*     and here...        */
+    // flex-direction: column;
+    // justify-content: space-between;
+    // transform: translate3d(0px, 0px, 0px);
+    // // position: absolute;
+    // //width: 280px;
+    // background: #263249;
+    // // color: $ds-secondary-text-color;
+    // left: 10px;
+    // height: 30%;
+    // transition: all .3s;
+    // // width: 33.33%;
+    // float: left;
+    // z-index: 100;
+    list-style: none;
+    position: absolute;
+    background: #fff;
     left: 0;
-    top: 20%;
-        /*     here               */
-    width: 30%; //15%;
-        /*     and here...        */
-    flex-direction: column;
-    justify-content: space-between;
-    transform: translate3d(0px, 0px, 0px);
-    // position: absolute;
-    //width: 280px;
-    background: #263249;
-    // color: $ds-secondary-text-color;
-    left: 10px;
-    height: 30%;
-    transition: all .3s;
-    // width: 33.33%;
-    float: left;
+    width: 0;
+    top: 5%;
+    overflow: hidden;
+    max-width: 290px;
     z-index: 100;
+    font-size: 18px;
+    box-shadow: 0 10px 15px -3px rgb(46 41 51 / 8%), 0 4px 6px -2px rgb(71 63 79 / 16%);
+    transform: translateX(-100px);
+    transition: transform ease-in-out 0.2s;
+    /* transition: width ease 0.2s; */
 }
 
 .side-menu ul {
