@@ -21,7 +21,10 @@ const Menu = ({ isActive, toggleAction, }) => {
      
         // <nav className={nav} open={open}>
         <div className={getClass()} > 
-            <div className={menuButton + ' ' + closeButton} onClick={() => { toggleAction(false) }} />
+            {/* className={menuButton + ' ' + closeButton} */}
+            {/* <button className={menuButton} onClick={() => { toggleAction(false) }}>
+                {isActive ? 'close' : 'open'}
+            </button> */}
 	    		<ul className={navLink}>
 	    		    		<li className={navLinkItem}> 
                                 <Link to="/" className={aMenu}>

@@ -81,21 +81,23 @@ $ds-secondary-text-color: base.ds-color(neutral, 400);
 
 
 .menu-button {
+    position: fixed;
+    left: 10px;
+    top: 10px;
     cursor: pointer;
-    background-color: #EEE;
-    text-align: center;
-    // line-height: 2em;
-    padding: 10px;
-    // background-origin: border-box;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 25px;
-    width: 25px;
-    vertical-align: center;
-    align-content: center;
-    margin: auto;
-    background: #800080;
+    background: transparent;;
+    border: none;
+    // position: sticky;
+    // cursor: pointer;
+    // // background-color: #EEE;
+    // text-align: center;
+    // // line-height: 2em;
+    // padding: 0;
+    // // background-origin: border-box;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: center;
+    // z-index: 99;
 }
 
 .main-button {

@@ -44,7 +44,10 @@ class Header extends React.Component {
                 <header className={header}>
                     {/* <div className={headbar}> */}
                         <div className={menuTogglewrap}>
-                            <div className={menuButton + ' ' + mainButton} onClick={this.handleClick} onKeyDown={this.handleKeyDown} />
+                        {/* className={menuButton + ' ' + mainButton} */}
+                            <button className={menuButton} onClick={this.handleClick} onKeyDown={this.handleKeyDown}>
+                                {this.state.menuShow ? 'close' : 'open'}
+                            </button>
                         </div>
                         <h3 className={brand}>DPB</h3>
                         <div className={darkModeToggle}>
