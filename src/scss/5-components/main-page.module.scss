@@ -1,0 +1,102 @@
+// abstracts
+@use '../1-abstracts/abstracts-dir' as variables;
+// themes
+@use '../2-themes/themes-dir';
+// base
+@use '../3-base/base-dir';
+@use '../4-layout/layout-dir' as layout;
+
+$font-stack: Helvetica, "Open Sans";
+;
+$primary-color: #333;
+
+
+ol {
+    text-align: left;
+    margin: auto;
+    width: 90%;
+}
+
+h3 {
+    text-align: center;
+    margin: auto;
+    width: 90%;
+}
+
+
+
+.text-start {
+    text-align: left;
+}
+
+.heading {
+    color: rebeccapurple;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    min-width: 5%;
+    height: 5%;
+
+}
+
+.main-container {
+    max-width: variables.$grid__bp-xl * 1px;
+    //max-width: 100%;
+    margin: 0 auto;
+    // min-height: 5%;
+    height: 5%;
+
+    &--fluid {
+        margin: 0;
+        max-width: 100%;
+        // min-height: 5%;
+        height: 5%;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-around;
+        // flex-wrap: wrap;
+        width: 100%;
+        // min-height: 5%;
+        height: 5%;
+    }
+
+    @each $modifier ,
+    $breakpoint in variables.$map-grid-props {
+        @include layout.create-col-classes($modifier, variables.$grid__cols, $breakpoint);
+    }
+}
+
+.main-container {
+    // background-color: #88d8b0;
+    padding: 1px;
+    box-sizing: border-box;
+
+    &__row {
+        // min-height: 500px;
+        background-color: #00FFFF;
+
+        &.nested {
+            background-color: #f0f8ff;
+        }
+    }
+
+    @at-root {
+        [class*='container__col-'] {
+            &.higher {
+                // min-height: 5%;
+                height: 100%;
+            }
+
+            // min-height: 5%;
+            height: 100%;
+            background-color: #faebd7;
+            // outline: 1px solid #ffcc5c;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+    }
+}

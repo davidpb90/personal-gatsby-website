@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 import Footer from '../footer'
 // import ModeToggle from '../mode-toggle'
 import Header from "../header"
+import MainPage from "../main-page"
 // import { cold } from 'react-hot-loader';
 // cold(Header);
 import {
@@ -58,13 +59,11 @@ const Layout = ({ pageTitle, children }) => {
                 <div className={centralContainer__col1}>
                 </div>
                 <main className={centralContainer__col10 + ' ' + centralContainer__colLg10 + ' ' + centralContainer__colMd10 + ' ' + centralContainer__colSm8}>
-                    <h1 className={heading}>{pageTitle}</h1>
-                    {children}
-	    			{/* <h1 className={text}-left py-1 px-2 mx-2">David Pardo Bernal</h1> */}
-	    			{/* <p className={lead} py-1 px-2 mx-2">A personal and professional repository.</p> */}
-	    			{/* <p className={lead}"> */}
-	    			{/* </p> */}
-	    		    {/* <script src="js/p5-sketches.js"></script> */}
+                    {/* <h1 className={heading}>{pageTitle}</h1>
+                    {children} */}
+                    <MainPage pageTitle={pageTitle} children={children}>
+                    </MainPage>
+	    
 	    		</main>
                 <div className={centralContainer__col1}>
                 </div>
