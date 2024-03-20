@@ -196,6 +196,7 @@ nav {
     // position: absolute;
     width: 100%;
     transform: translateX(0px);
+    top: 45px;
 }
 
 .side-menu {
@@ -232,7 +233,7 @@ nav {
     background: #fff;
     left: 0;
     width: 0;
-    top: 5%;
+    top: 45px;
     overflow: hidden;
     max-width: 290px;
     z-index: 100;

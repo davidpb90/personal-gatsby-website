@@ -352,7 +352,7 @@ td {
     max-width: variables.$grid__bp-xl * 1px;
     margin: 0 auto;
     height: 5%;
-
+    z-index: 103;
     &--fluid {
         margin: 0;
         max-width: 100%;
@@ -408,7 +408,7 @@ td {
     margin: 0 auto;
     min-height: 80%;
     height: 80%;
-
+    z-index: 102;
     &--fluid {
         margin: 0;
         min-width: 80%;
@@ -435,7 +435,6 @@ td {
     // background-color: #88d8b0;
     padding: 5px;
     box-sizing: border-box;
-
     &__row {
         // min-height: 500px;
         background-color: #ffeead;
@@ -494,6 +493,7 @@ td {
     // background-color: #88d8b0;
     padding: 5px;
     box-sizing: border-box;
+    z-index: 101;
 
     &__row {
         // min-height: 500px;
@@ -527,7 +527,7 @@ td {
     margin: 0 auto;
     // min-height: 5%;
     height: 5%;
-
+    
     &--fluid {
         margin: 0;
         max-width: 100%;
@@ -542,6 +542,11 @@ td {
         width: 100%;
         // min-height: 5%;
         height: 5%;
+        position: -webkit-sticky;
+        /* Safari */
+        position: sticky;
+        top: 0;
+        z-index: 100;
     }
 
     @each $modifier ,
@@ -578,6 +583,11 @@ td {
             display: flex;
             align-items: center;
             justify-content: space-around;
+            position: -webkit-sticky;
+            /* Safari */
+            position: sticky;
+            top: 0;
+            z-index: 99;
         }
     }
 }
